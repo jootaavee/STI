@@ -1,0 +1,105 @@
+.container_tela_7 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222961;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../imagensCentroT1/fundo_2.jpg);
+}
+
+.voltar_tela_7 {
+    display: flex;
+    height: 10vh;
+    width: 8vw;
+    border: red 2px solid;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+}
+
+
+.topo_tela_7 {
+    display: flex;
+    height: 22vh;
+    width: 99vw;
+    border: red 2px solid;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.inicio_tela_7 {
+    display: flex;
+    height: 10vh;
+    width: 15vw;
+    border: red 2px solid;
+
+}
+
+.titulo_tela_7 {
+    display: flex;
+    height: 15vh;
+    width: 30vw;
+    border: red 2px solid;
+
+}
+
+.fim_tela_7 {
+    display: flex;
+    height: 10vh;
+    width: 15vw;
+    border: red 2px solid;
+
+}
+
+.confirmar_tela_7 {
+    display: flex;
+    height: 10vh;
+    width: 8vw;
+    border: red 2px solid;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+.baixo_tela_7 {
+    display: flex;
+    height: 72vh;
+    width: 90vw;
+    border: red 2px solid;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulo_descricao_tela_7 {
+    display: flex;
+    height: 10vh;
+    width: 88vw;
+    border: red 2px solid;
+    position: relative;
+    bottom: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.itens_titulo_tela_7 {
+    display: flex;
+    height: 6vh;
+    width: 8vw;
+    border: red 2px solid;
+}
+
+.descricao_tela_7 {
+    display: flex;
+    height: 5vh;
+    width: 85vw;
+    border: red 2px solid;
+}

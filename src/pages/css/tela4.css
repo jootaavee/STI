@@ -1,0 +1,44 @@
+.container_tela_4 {
+    display: flex;
+    background-color: #222961;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../imagensCentroT1/fundo_2.jpg);
+}
+
+.lateral_tela_4 {
+    display: flex;
+    height: 100vh;
+    width: 78vw;
+    /* border: purple 2px solid; */
+}
+
+.chamados_tela_4 {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    /* border: rgb(0, 255, 72) 2px solid; */
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao_chamados_tela_4 {
+    height: 15%;
+    width: 90%;
+    background-color: red;
+}
+
+.rolagem_tela_4 {
+    width: 10%;
+    height: 100%;
+    background-color: red;
+}
+
+.adicionar_tela_4 {
+    height: 15%;
+    width: 100%;
+    background-color: #ff00ee;
+
+}

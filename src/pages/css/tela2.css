@@ -1,0 +1,88 @@
+.container_tela_2 {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222961;
+    background-image: url(../imagensCentroT1/fundo_2.jpg);
+}
+
+.centro_tela_2 {
+    overflow: hidden;
+    border: red solid 1px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    height: 100%;
+}
+
+.secao1 {
+    border-radius: 20px;
+    border: red 1px solid;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    background-color: rgb(20, 65, 110);
+    height: 90%;
+}
+
+.secao2 {
+    border-radius: 20px;
+    border: red 1px solid;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(20, 65, 110);
+    height: 90%;
+}
+
+.secao3 {
+    border-radius: 20px;
+    border: red 1px solid;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(20, 65, 110);
+    height: 90%;
+}
+
+.secao4 {
+    border-radius: 20px;
+    border: red 1px solid;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 5%;
+    background-color: rgb(20, 65, 110);
+    height: 90%;
+}
+
+.click {
+    width: 100%;
+}
+
+/*para teste*/
+.clickteste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border: green 2px solid;
+}
