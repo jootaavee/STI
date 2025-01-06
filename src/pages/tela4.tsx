@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './css/tela4.css'
 import BarraLateral from '../components/barralateral/barralateral.tsx';
 
@@ -33,12 +33,23 @@ const Tela4 = () => {
                     <div className='descricao_chamados_tela_4'>
 
                     </div>
-                </div>
-                <div className='rolagem_tela_4'>
-                    <div className='adicionar_tela_4'>
+                    <div className='descricao_chamados_tela_4'>
+
+                    </div>
+                    <div className='descricao_chamados_tela_4'>
+
+                    </div>
+                    <div className='descricao_chamados_tela_4'>
+
+                    </div>
+                    <div className='descricao_chamados_tela_4'>
 
                     </div>
                 </div>
+                <div className='adicionar_tela_4'>
+            
+                </div>
+            
             </div>
         </div>
     </>)

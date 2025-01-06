@@ -16,7 +16,7 @@ const PieChartComponent = ({ data }) => {
                 labelLine={false}
                 label={({ name }) => name} // Exibe o nome na fatia
                 outerRadius={100} // Raio externo ajustado
-                fill="#8884d8"
+                fill="#8884d8"//e isso
                 dataKey="value" // Especifica a chave de dados para o valor
             >
                 {data.map((entry, index) => (

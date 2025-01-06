@@ -3,7 +3,7 @@
     height: 100vh;
     width: 99vw;
     background-color: #222961;
-    background-image: url(../imagensCentroT1/fundo_2.jpg);
+    background-image: url(../imagensCentroT1/fundo_3.jpeg);
 }
 
 .lateral_tela_9 {
@@ -12,6 +12,8 @@
     width: 78vw;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 0rem;
 }
 
 .descricao_tela_9 {

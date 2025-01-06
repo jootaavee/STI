@@ -3,8 +3,6 @@ import './css/tela10.css';
 import BarraLateral from '../components/barralateral/barralateral.tsx';
 import { Link } from 'react-router-dom';
 
-const Fundo = require('./imagensCentroT1/fundo.jpg');
-
 const tela10 = () => {
     return (<>
         <div className='container_tela_10'>
