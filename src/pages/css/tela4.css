@@ -1,0 +1,66 @@
+.container_tela_4 {
+    display: flex;
+    /* background-color: #222961; */
+    height: 200vh;
+    width: 100vw;
+    background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
+    background-size: cover;
+
+}
+
+.lateral_tela_4 {
+    display: flex;
+    height: 200vh;
+    width: 78vw;
+    /* border: purple 2px solid; */
+    position: absolute;
+    right: 0rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.chamados_tela_4 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* border: rgb(0, 255, 72) 2px solid; */
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.descricao_chamados_tela_4 {
+    display: flex;
+    height: 15vh;
+    width: 60vw;
+    background-image: url('../imagens/imagens_tela_4/fundo_fanat.jpeg');
+    background-position: center;
+    border-radius: 3rem;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.descricao_chamados_tela_4:hover {
+    display: flex;
+    height: 15vh;
+    width: 60vw;
+    background-image: url('../imagens/imagens_tela_4/fundo_fanat.jpeg');
+    background-position: center;
+    border-radius: 3rem;
+    background-size: cover;
+    opacity: 1;
+}
+
+
+
+.adicionar_tela_4 {
+    height: 5%;
+    width: 7%;
+    background-color: #ff00ee;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+}

@@ -1,0 +1,186 @@
+.container_tela_2 {
+    display: flex;
+    flex-direction: row;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #222961;
+    background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
+
+    .centro_tela_2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 78%;
+        position: relative;
+        left: 22%;
+        gap: 4%;
+
+        .secao_1_tela_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+
+            height: 90%;
+            width: 20%;
+            border-radius: 3rem;
+
+            background-color: rgb(44, 49, 88, 0.6);
+
+            .setor_1_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #7b1111;
+            }
+
+            .setor_1_tela_2:hover {
+                background-color: #9E1B1B;
+            }
+        }
+
+        .secao_2_tela_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            height: 90%;
+            width: 20%;
+            border-radius: 3rem;
+
+            background-color: rgb(44, 49, 88, 0.6);
+
+            .setor_2_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #982994;
+            }
+
+            .setor_2_tela_2:hover {
+                background-color: #DB54D6;
+            }
+        }
+
+        .secao_3_tela_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            height: 90%;
+            width: 20%;
+            border-radius: 3rem;
+
+            background-color: rgb(44, 49, 88, 0.6);
+
+            .setor_3_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #a75000;
+            }
+
+            .setor_3_tela_2:hover {
+                background-color: #FF7A00;
+            }
+        }
+
+        .secao_4_tela_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            height: 90%;
+            width: 20%;
+            border-radius: 3rem;
+
+            background-color: rgb(44, 49, 88, 0.6);
+
+            .setor_4_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #0b8201;
+            }
+
+            .setor_4_tela_2:hover {
+                background-color: #10c200;
+            }
+
+            .setor_4_1_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #006dba;
+            }
+
+            .setor_4_1_tela_2:hover {
+                background-color: #0094FF;
+            }
+
+            .setor_4_2_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #0426a0;
+            }
+
+            .setor_4_2_tela_2:hover {
+                background-color: #1447ff;
+            }
+        }
+
+        .texto_tela_2 {
+            display: flex;
+            height: auto;
+            width: auto;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            text-shadow: 1.5px 1.5px 3px black;
+        }
+
+        .link {
+            display: flex;
+            height: 10%;
+            width: 80%;
+        }
+    }
+}
