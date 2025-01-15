@@ -1,0 +1,42 @@
+<div className='container'>
+    <div className='barralateral'>
+        <div className='sti'>
+            <img src={sti} alt="stilogo" className='stilogo' />
+        </div>
+        <div className='dashboard'>
+            <FaHouseChimney style={{ color: 'white', fontSize: '25px', marginRight: '3%'}} />
+            <Link to="/" className='link'>
+                <h1 className='titulodeBL'>Dashboard</h1>
+            </Link>
+        </div>
+        <div className='setores'>
+            <FaLandmarkFlag style={{ color: 'white', fontSize: '25px', marginRight: '3%'}} />
+            <Link to='/tela2' className='link'>
+                <h1 className='titulodeBL'>Setores</h1>
+            </Link>
+        </div>
+        <div className='chamados'>
+            <MdReportProblem style={{ color: 'white', fontSize: '25px', marginRight: '3%'}} />
+            <Link to='/tela4' className='link'>
+                <h1 className='titulodeBL'>Chamados</h1>
+            </Link>
+        </div>
+        <div className='materiais'>
+            <FaBoxOpen style={{ color: 'white', fontSize: '25px', marginRight: '3%'}} />
+            <Link to='/tela8' className='link'>
+                <h1 className='titulodeBL'>Materiais</h1>
+            </Link>
+        </div>
+        <div className='profissionais'>
+            <IoPeopleSharp style={{ color: 'white', fontSize: '25px', marginRight: '3%'}} />
+            <Link to='/tela10' className='link'>
+                <h1 className='titulodeBL'>Profissionais</h1>
+            </Link>
+        </div>
+    </div>
+
+    <div className='centro'>
+
+    </div>
+    <img src={detalhe} alt="datelhelogo" className='detalhelogo' />
+</div>

@@ -1,0 +1,166 @@
+.container_tela_6 {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #222961;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../imagensCentroT1/fundo_3.jpeg);
+}
+
+.logo_voltar_tela_6{
+    width: 2.5vw;
+    height: 4.8vh;
+}
+
+.voltar_tela_6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 8vw;
+    border: red 2px solid;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+}
+
+.logo_adicao_tela_6{
+    width: 3vw;
+    height: 6vh;
+}
+
+.topo_tela_6{
+    display: flex;
+    height: 22vh;
+    width: 99vw;
+    border: red 2px solid;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.inicio_tela_6 {
+    display: flex;
+    height: 10vh;
+    width: 15vw;
+    border: red 2px solid;
+
+}
+
+.titulo_tela_6 {
+    display: flex;
+    height: 10vh;
+    width: 15vw;
+    border: red 2px solid;
+
+}
+
+.fim_tela_6 {
+    display: flex;
+    height: 10vh;
+    width: 15vw;
+    border: red 2px solid;
+}
+
+.baixo_tela_6{
+    display: flex;
+    height: 72vh;
+    width: 90vw;
+    border: red 2px solid;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: top;
+}
+
+.titulo_descricao_tela_6{
+    display: flex;
+    height: 10vh;
+    width: 88vw;
+    border: red 2px solid;
+    bottom: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.itens_titulo_tela_6 {
+    display: flex;
+    height: 6vh;
+    width: 8vw;
+    border: red 2px solid;
+}
+
+.adicionar_descricao_tela_6{
+    border: red 2px solid;
+    height: 5vh;
+    width: 3vw;
+}
+
+.editar_inicio_tela_6{
+    border: red 2px solid;
+    height: 100vh;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editar_titulo_tela_6{
+    border: red 2px solid;
+    height: 100vh;
+    width: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio_tela_6{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 10vh;
+    width: 17vw;
+    border: green 2px solid;
+    overflow: hidden;
+}
+
+.titulo_tela_6{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+    height: 15vh;
+    width: 30vw;
+    border: red 2px solid;
+}
+
+.fim_tela_6{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+    height: 10vh;
+    width: 17vw;
+    border: blue 2px solid;
+}
+
+.editar_fim_tela_6{
+    border: red 2px solid;
+    height: 100vh;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricao_tela_6{
+    display: flex;
+    height: 5vh;
+    width: 85vw;
+    border: red 2px solid;
+}

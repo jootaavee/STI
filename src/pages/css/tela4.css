@@ -1,0 +1,65 @@
+body{
+    background-color: #202442;
+}
+
+.link_chamado_tela_4{
+    border: green 2px solid;
+    height: 20px;
+    width: 20px;
+}
+
+.container_tela_4 {
+    display: flex;
+    height: 100vh;
+    width: 98.8vw;
+    /* background-image: url(../imagensCentroT1/fundo_3.jpeg); */
+}
+
+.lateral_tela_4 {
+    height: 100vh;
+    width: 100vw;
+    margin-left: 22vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.chamados_tela_4 {
+    height: 100vh;
+    width: 68vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
+}
+
+.descricao_chamados_tela_4 {
+    display: flex;
+    height: 15vh;
+    width: 60vw;
+    background-image: url('../imagens_tela_4/fundo_fanat.jpeg');
+    background-position: center;
+    border-radius: 3rem;
+    background-size: cover;
+    opacity: 0.8;
+    margin-top: 5vh;
+}
+
+.descricao_chamados_tela_4:hover {
+    display: flex;
+    height: 15vh;
+    width: 60vw;
+    background-image: url('../imagens_tela_4/fundo_fanat.jpeg');
+    background-position: center;
+    border-radius: 3rem;
+    background-size: cover;
+    opacity: 1;
+}
+
+.adicionar_tela_4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    width: 4vw;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}

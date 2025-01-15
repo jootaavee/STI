@@ -1,0 +1,128 @@
+.container_tela_1 {
+    display: flex;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #222961;
+    background-image: url(../imagensCentroT1/fundo_3.jpeg);
+
+}
+
+.centro_tela_1 {
+    display: flex;
+
+    height: 100vh;
+    width: 78vw;
+    gap: 6%;
+
+    position: absolute;
+    right: 0rem;
+}
+
+
+.parte_direita_tela_1 {
+    overflow: hidden;
+
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.parte_esquerda_tela_1 {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 6%;
+}
+
+.parte_superior_tela_1 {
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.grafico_PIZZA {
+    overflow: hidden;
+
+    /* border: 2px solid red; */
+    height: 80vh;
+    width: 23vw;
+    background-color: rgb(34, 41, 97, 0.85);
+    border-radius: 40px;
+}
+
+.tabela_hora {
+    overflow: hidden;
+
+    /* border: red solid 2px; */
+    background-image: url('../imagensCentroT1/clima.gif');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 50%;
+    width: 18vw;
+    height: 30vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 120, 141);
+}
+
+.relogio {
+    color: white;
+}
+
+.data {
+    color: white;
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.grafico_PIZZA {
+    align-items: start;
+    display: flex;
+    justify-content: center;
+}
+
+.grafico_MAT {
+    display: flex;
+    overflow: hidden;
+    /* border: red 2px solid; */
+    width: 39vw;
+    background-color: rgb(34, 41, 97, 0.85);
+    border-radius: 40px;
+    height: 40vh;
+    background-size: contain;
+}
+
+.MAT {
+    margin-top: 11%;
+}
+
+.tabela_QDC {
+    overflow: hidden;
+
+    /* border: red 2px solid; */
+    background-color: rgb(34, 41, 97, 0.85);
+    width: 18vw;
+    height: 30vh;
+    border-radius: 30px;
+}
+
+.titulo_QDC {
+    color: whitesmoke;
+    padding: 12px;
+    margin: 3px;
+    font-size: 9px;
+}
