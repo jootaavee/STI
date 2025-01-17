@@ -95,6 +95,7 @@
 .titulodeBL {
     color: white;
     font-size: 150%;
+    text-shadow: 1.5px 1.5px 3px black;
     /* position: relative;
     left: 1rem; */
 }
