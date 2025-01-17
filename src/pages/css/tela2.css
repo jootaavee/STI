@@ -1,90 +1,186 @@
 .container_tela_2 {
     display: flex;
     flex-direction: row;
+
     height: 100vh;
     width: 100vw;
+
     background-color: #222961;
-    background-image: url(../imagensCentroT1/fundo_3.jpeg);
-}
+    background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 
-.centro_tela_2 {
-    overflow: hidden;
-    /* border: red solid 1px; */
-    align-items: center;
-    display: flex;
-    gap: 5%;
-    height: 100%;
-    width: 78%;
-    position: absolute;
-    right: 0rem;
-}
+    .centro_tela_2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 78%;
+        position: relative;
+        left: 22%;
+        gap: 4%;
 
-.secao1 {
-    border-radius: 20px;
-    border: red 1px solid;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: 5%;
-    background-color: rgb(20, 65, 110);
-    height: 90%;
-}
+        .secao_1_tela_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
 
-.secao2 {
-    border-radius: 20px;
-    border: red 1px solid;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(20, 65, 110);
-    height: 90%;
-}
 
-.secao3 {
-    border-radius: 20px;
-    border: red 1px solid;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(20, 65, 110);
-    height: 90%;
-}
+            height: 90%;
+            width: 20%;
+            border-radius: 3rem;
 
-.secao4 {
-    border-radius: 20px;
-    border: red 1px solid;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-right: 5%;
-    background-color: rgb(20, 65, 110);
-    height: 90%;
-}
+            background-color: rgb(44, 49, 88, 0.6);
 
-.click {
-    width: 100%;
-}
+            .setor_1_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-/*para teste*/
-.clickteste {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10vw;
-}
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
 
-.botao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    border: green 2px solid;
+                background-color: #7b1111;
+            }
+
+            .setor_1_tela_2:hover {
+                background-color: #9E1B1B;
+            }
+        }
+
+        .secao_2_tela_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            height: 90%;
+            width: 20%;
+            border-radius: 3rem;
+
+            background-color: rgb(44, 49, 88, 0.6);
+
+            .setor_2_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #982994;
+            }
+
+            .setor_2_tela_2:hover {
+                background-color: #DB54D6;
+            }
+        }
+
+        .secao_3_tela_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            height: 90%;
+            width: 20%;
+            border-radius: 3rem;
+
+            background-color: rgb(44, 49, 88, 0.6);
+
+            .setor_3_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #a75000;
+            }
+
+            .setor_3_tela_2:hover {
+                background-color: #FF7A00;
+            }
+        }
+
+        .secao_4_tela_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            height: 90%;
+            width: 20%;
+            border-radius: 3rem;
+
+            background-color: rgb(44, 49, 88, 0.6);
+
+            .setor_4_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #0b8201;
+            }
+
+            .setor_4_tela_2:hover {
+                background-color: #10c200;
+            }
+
+            .setor_4_1_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #006dba;
+            }
+
+            .setor_4_1_tela_2:hover {
+                background-color: #0094FF;
+            }
+
+            .setor_4_2_tela_2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3rem;
+
+                background-color: #0426a0;
+            }
+
+            .setor_4_2_tela_2:hover {
+                background-color: #1447ff;
+            }
+        }
+
+        .texto_tela_2 {
+            display: flex;
+            height: auto;
+            width: auto;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            text-shadow: 1.5px 1.5px 3px black;
+        }
+
+        .link {
+            display: flex;
+            height: 10%;
+            width: 80%;
+        }
+    }
 }

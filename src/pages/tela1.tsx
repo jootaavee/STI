@@ -4,6 +4,7 @@ import "./css/tela1.css";
 import Relogio from '../components/relogio.tsx';
 import Data from '../components/data.tsx';
 import BarraLateral from '../components/barralateral/barralateral.tsx';
+import Detalhe from '../components/detalhe/detalhe.tsx';
 
 //graficos
 import PieChartComponent from '../components/pizza.tsx';
@@ -39,6 +40,8 @@ const Tela1 = () => {
     return (<>
         <div className='container_tela_1'>
             <BarraLateral />
+            <Detalhe />
+
             <div className='centro_tela_1'>
                 <div className='parte_esquerda_tela_1'>
                     <div className='parte_superior_tela_1'>
@@ -66,7 +69,7 @@ const Tela1 = () => {
                 </div>
             </div>
 
-        </div>
+        </div >
     </>);
 }
 

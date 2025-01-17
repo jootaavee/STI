@@ -1,11 +1,11 @@
 .container_tela_1 {
     display: flex;
-
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
 
     background-color: #222961;
-    background-image: url(../imagensCentroT1/fundo_3.jpeg);
+    background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 
 }
 
@@ -56,13 +56,15 @@
     width: 23vw;
     background-color: rgb(34, 41, 97, 0.85);
     border-radius: 40px;
+    /* border: red 2px solid; */
+
 }
 
 .tabela_hora {
     overflow: hidden;
 
     /* border: red solid 2px; */
-    background-image: url('../imagensCentroT1/clima.gif');
+    background-image: url('../imagens/imagensCentroT1/clima.gif');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: 50%;
@@ -93,6 +95,7 @@
     align-items: start;
     display: flex;
     justify-content: center;
+    /* border: red 2px solid; */
 }
 
 .grafico_MAT {

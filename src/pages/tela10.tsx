@@ -2,11 +2,13 @@ import React from 'react';
 import './css/tela10.css';
 import BarraLateral from '../components/barralateral/barralateral.tsx';
 import { Link } from 'react-router-dom';
+import Detalhe from '../components/detalhe/detalhe.tsx';
 
 const tela10 = () => {
     return (<>
         <div className='container_tela_10'>
             <BarraLateral />
+            <Detalhe />
             <div className='lateral_tela_10'>
                 <div className='estagiarios_tela_10'><h1>ESTAGIARIOS</h1>
                     <div className='nome_estagiarios_tela_10'>

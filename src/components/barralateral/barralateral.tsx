@@ -10,7 +10,7 @@ import { MdReportProblem } from "react-icons/md";
 import { IoPeopleSharp } from "react-icons/io5";
 
 //imagens barra lateral
-const sti = require('../../pages/imagensBarralateral/sti.png');
+const sti = require('../../pages/imagens/imagensBarralateral/sti.png');
 
 const BarraLateral = () => {
     return (<>
