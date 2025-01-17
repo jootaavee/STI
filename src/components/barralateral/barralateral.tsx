@@ -30,7 +30,7 @@ const BarraLateral = () => {
                     </div>
                     <div className='hover'>
                         <div className='setores'>
-                            <FaLandmarkFlag style={{ color: 'white', fontSize: '25px', marginRight: '3%', marginLeft: '9%', marginBottom: '2.5%' }} />
+                            <FaLandmarkFlag style={{ color: 'white', fontSize: '25px', marginRight: '3%', marginLeft: '9%', marginBottom: '2.5%', textShadow: '2px 10px 5px rgba(0, 0, 0, 1)', }} />
                             <Link to='/tela2' className='link'>
                                 <h1 className='titulodeBL'>Setores</h1>
                             </Link>
