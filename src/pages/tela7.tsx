@@ -15,12 +15,10 @@ const tela7 = () => {
     return (<>
         <div className='container_tela_7'>
             <Detalhe />
-            <div className='confirmar_tela_7'>
-                <Link to='/tela5'>
-                    <img src={logo_confirmar} className='logo_confirmar_tela_7' />
-                </Link>
-            </div>
             <div className='topo_tela_7'>
+                <div className='espaco_tela_7'>
+
+                </div>
                 <div className='inicio_tela_7'>
                     <div className='editar_inicio_tela_7'>
                         <img src={logo_edicao} className='logo_edicao_inicio_tela_6' alt='' />
@@ -35,6 +33,11 @@ const tela7 = () => {
                     <div className='editar_fim_tela_7'>
                         <img src={logo_edicao} className='logo_edicao_fim_tela_6' alt='' />
                     </div>
+                </div>
+                <div className='confirmar_tela_7'>
+                    <Link to='/tela5'>
+                        <img src={logo_confirmar} className='logo_confirmar_tela_7' />
+                    </Link>
                 </div>
             </div>
 

@@ -15,12 +15,12 @@ const tela6 = () => {
     return (<>
         <div className='container_tela_6'>
             <Detalhe />
-            <div className='voltar_tela_6'>
-                <Link to='/tela4'>
-                    <img src={logo_voltar} className='logo_voltar_tela_6' />
-                </Link>
-            </div>
             <div className='topo_tela_6'>
+                <div className='voltar_tela_6'>
+                    <Link to='/tela4'>
+                        <img src={logo_voltar} className='logo_voltar_tela_6' />
+                    </Link>
+                </div>
                 <div className='inicio_tela_6'>
                     <div className='editar_inicio_tela_6'>
                         <img src={logo_edicao} className='logo_edicao_inicio_tela_6' alt='' />
@@ -35,6 +35,9 @@ const tela6 = () => {
                     <div className='editar_fim_tela_6'>
                         <img src={logo_edicao} className='logo_edicao_fim_tela_6' alt='' />
                     </div>
+                </div>
+                <div className='espaco_tela_6'>
+                    {/* div usada para centralizar itens */}
                 </div>
             </div>
             <div className='baixo_tela_6'>
@@ -63,9 +66,6 @@ const tela6 = () => {
                     <div className='itens_titulo_tela_6'>
 
                     </div>
-                </div>
-                <div className='descricao_tela_6'>
-
                 </div>
                 <div className='adicionar_descricao_tela_6'>
                     <img src={logo_add} className='logo_adicao_tela_6' />
