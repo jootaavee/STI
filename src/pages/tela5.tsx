@@ -1,6 +1,8 @@
 import React from 'react';
 import './css/tela5.css';
 import { Link } from 'react-router-dom';
+import { FaRegEdit } from "react-icons/fa";
+import logo_voltar from './imagens/imagens_tela_5/back.png'
 import Detalhe from '../components/detalhe/detalhe.tsx';
 
 // const back = require('./imagensCentroT5/back.png')
@@ -14,7 +16,9 @@ const tela5 = () => {
             <Detalhe />
             <div className='topo_tela_5'>
                 <div className='voltar_tela_5'>
-
+                    <Link to='/tela4'>
+                        <img src={logo_voltar} className='logo_voltar_tela_5' />
+                    </Link>
                 </div>
                 <div className='inicio_tela_5'>
 
@@ -26,7 +30,9 @@ const tela5 = () => {
 
                 </div>
                 <div className='editar_tela_5'>
-
+                    <Link to='/tela7'>
+                        <FaRegEdit style={{ color: 'white', fontSize: '200%' }} />
+                    </Link>
                 </div>
             </div>
             <div className='baixo_tela_5'>

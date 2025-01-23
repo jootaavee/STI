@@ -21,13 +21,15 @@
 
         .voltar_tela_5 {
             display: flex;
-            height: 10vh;
-            width: 8vw;
-            border: red 2px solid;
+            height: auto;
+            width: auto;
+            /* border: red 2px solid; */
             position: relative;
-            left: 1.5rem;
+            right: 1.5rem;
             bottom: 1.5rem;
             /* background-color: rgb(34, 41, 97, 0.85); */
+            align-items: center;
+            justify-content: center;
         }
 
         .inicio_tela_5 {
@@ -58,13 +60,15 @@
 
         .editar_tela_5 {
             display: flex;
-            height: 10vh;
-            width: 8vw;
-            border: red 2px solid;
+            height: auto;
+            width: auto;
+            /* border: red 2px solid; */
             position: relative;
-            right: 1.5rem;
+            left: 1.5rem;
             bottom: 1.5rem;
             background-color: rgb(34, 41, 97, 0.85);
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -140,9 +144,9 @@
 
         .espaco_tela_5 {
             display: flex;
-            height: 10%;
+            height: 15%;
             width: 100%;
-            border: 2px red solid;
+            /* border: 2px red solid; */
         }
     }
 }

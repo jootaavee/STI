@@ -12,6 +12,7 @@ import Tela7 from "../pages/tela7.tsx";
 import Tela8 from "../pages/tela8.tsx";
 import Tela9 from "../pages/tela9.tsx";
 import Tela10 from "../pages/tela10.tsx";
+import Tela11 from "../pages/tela11.tsx";
 import Facem from "../pages/setores/faculdades/facem.tsx";
 import Facs from "../pages/setores/faculdades/facs.tsx";
 import Fad from "../pages/setores/faculdades/fad.tsx";
@@ -37,6 +38,7 @@ const AppRoutes = () => (
             <Route path="/tela8" element={<Tela8 />}></Route>
             <Route path="/tela9" element={<Tela9 />}></Route>
             <Route path="/tela10" element={<Tela10 />}></Route>
+            <Route path="/tela11" element={<Tela11 />}></Route>
             <Route path="/facem" element={<Facem />}></Route>
             <Route path="/facs" element={<Facs />}></Route>
             <Route path="/fad" element={<Fad />}></Route>
