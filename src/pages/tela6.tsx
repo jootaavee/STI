@@ -1,9 +1,9 @@
 import React from 'react';
 import './css/tela6.css';
 import { Link } from 'react-router-dom';
-import logo_voltar from './imagens_tela_6/back.png'
-import logo_add from './imagens_tela_6/+.png'
-import logo_edicao from './imagens_tela_6/logo_editar.png'
+import logo_voltar from './imagens/imagens_tela_6/back.png'
+import logo_add from './imagens/imagens_tela_6/+.png'
+import logo_edicao from './imagens/imagens_tela_6/logo_editar.png'
 import Detalhe from '../components/detalhe/detalhe.tsx';
 
 // const back = require('./imagensCentroT5/back.png')

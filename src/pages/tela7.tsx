@@ -1,9 +1,9 @@
 import React from 'react';
 import './css/tela7.css';
 import { Link } from 'react-router-dom';
-import logo_confirmar from './imagens_tela_7/logo_confirmar.png'
-import logo_add from './imagens_tela_7/+.png'
-import logo_edicao from './imagens_tela_7/logo_editar.png'
+import logo_confirmar from './imagens/imagens_tela_7/logo_confirmar.png'
+import logo_add from './imagens/imagens_tela_7/+.png'
+import logo_edicao from './imagens/imagens_tela_7/logo_editar.png'
 import Detalhe from '../components/detalhe/detalhe.tsx';
 
 // const back = require('./imagensCentroT5/back.png')
