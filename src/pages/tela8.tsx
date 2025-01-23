@@ -31,7 +31,7 @@ const tela8 = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='linha_tela_5'>
+                    <div className='linha_tela_8'>
 
                     </div>
                     <div className='itens_descricao_tela_8'>

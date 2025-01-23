@@ -13,11 +13,13 @@
         display: flex;
         height: 22vh;
         width: 99vw;
-        border: red 2px solid;
+        /* border: red 2px solid; */
         align-items: center;
         justify-content: center;
         gap: 5%;
-        background-color: rgb(34, 41, 97, 0.85);
+        /* background-color: rgb(34, 41, 97, 0.85); */
+        position: relative;
+        bottom: 1%;
 
         .voltar_tela_5 {
             display: flex;
@@ -36,17 +38,29 @@
             display: flex;
             height: 10vh;
             width: 15vw;
-            border: red 2px solid;
+            /* border: red 2px solid; */
             /* background-color: rgb(34, 41, 97, 0.85); */
+            font-size: x-large;
+            color: #FFF;
+            font-weight: bold;
+            text-size-adjust: 80%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
 
         }
 
         .titulo_tela_5 {
             display: flex;
             height: 15vh;
-            width: 30vw;
-            border: red 2px solid;
+            width: 28vw;
+            /* border: red 2px solid; */
             /* background-color: rgb(34, 41, 97, 0.85); */
+            font-size: xx-large;
+            color: #FFF;
+            font-weight: bold;
+            text-size-adjust: 80%;
+            text-align: center;
         }
 
 
@@ -54,8 +68,15 @@
             display: flex;
             height: 10vh;
             width: 15vw;
-            border: green 2px solid;
+            /* border: green 2px solid; */
             /* background-color: rgb(34, 41, 97, 0.85); */
+            font-size: x-large;
+            color: #FFF;
+            font-weight: bold;
+            text-size-adjust: 80%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
         }
 
         .editar_tela_5 {
@@ -74,7 +95,7 @@
 
     .baixo_tela_5 {
         display: flex;
-        height: 72vh;
+        height: 68vh;
         width: 90vw;
         /* border: red 2px solid; */
         flex-direction: column;
@@ -83,6 +104,8 @@
         justify-content: center;
         background-color: rgb(34, 41, 97, 0.85);
         border-radius: 1rem;
+        position: relative;
+        bottom: 5%;
 
 
         .titulo_descricao_tela_5 {
@@ -90,13 +113,13 @@
             height: 3vh;
             width: 88vw;
             /* border: red 2px solid; */
-            position: relative;
-            /* bottom: 1rem; */
             flex-direction: row;
             align-items: center;
             justify-content: center;
             gap: 4%;
             overflow: hidden;
+            position: relative;
+            bottom: 35%;
 
 
             .itens_titulo_tela_5 {
@@ -119,6 +142,8 @@
             /* Cor da linha */
             margin-bottom: 15px;
             /* Espaçamento superior e inferior */
+            position: relative;
+            bottom: 35%;
         }
 
         .descricao_tela_5 {
@@ -131,6 +156,8 @@
             gap: 10%;
             border-radius: 2rem;
             background-color: rgb(36, 44, 105, 1);
+            position: relative;
+            bottom: 35%;
 
             .informação {
                 display: flex;
@@ -140,13 +167,6 @@
                 letter-spacing: 1px;
 
             }
-        }
-
-        .espaco_tela_5 {
-            display: flex;
-            height: 15%;
-            width: 100%;
-            /* border: 2px red solid; */
         }
     }
 }

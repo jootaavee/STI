@@ -30,60 +30,107 @@
             display: flex;
             height: 85vh;
             width: 65vw;
-            border: green 2px solid;
+            /* border: red 2px solid; */
             flex-direction: column;
             align-items: center;
-            gap: 2.5rem;
+            gap: 1rem;
+            border-radius: 1.5rem;
+            background: linear-gradient(0deg, rgb(47, 115, 153, 0.4)85%, #2C335A);
 
             .tiulo_descricao_tela_9 {
                 display: flex;
                 height: 10vh;
                 width: 63vw;
-                border: red 2px solid;
+                /* background-color: aquamarine; */
                 position: relative;
                 top: 1rem;
                 align-items: center;
                 justify-content: center;
-                gap: 3.5rem;
+                gap: 5%;
 
 
                 .inicio_tela_9 {
                     display: flex;
                     height: 6vh;
                     width: 15vw;
-                    border: red 2px solid;
+                    /* border: red 2px solid; */
+                    /* background-color: #2C335A; */
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: 900;
+                    /* letter-spacing: 2px; */
+                    font-size: x-large;
+                    /* font-family: 'Courier New', Courier, monospace; */
                 }
 
                 .titulo_tela_9 {
                     display: flex;
                     height: 6vh;
                     width: 15vw;
-                    border: red 2px solid;
+                    /* border: red 2px solid; */
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: 900;
+                    /* letter-spacing: 2px; */
+                    font-size: x-large;
+                    /* font-family: 'Courier New', Courier, monospace; */
                 }
 
                 .fim_tela_9 {
                     display: flex;
                     height: 6vh;
                     width: 15vw;
-                    border: red 2px solid;
+                    /* border: red 2px solid; */
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: 900;
+                    /* letter-spacing: 2px; */
+                    font-size: x-large;
+                    /* font-family: 'Courier New', Courier, monospace; */
                 }
+            }
+
+            .linha_tela_9 {
+                width: 95%;
+                /* Largura total do contêiner */
+                height: 2px;
+                /* Altura da linha */
+                background-color: #FFF;
+                /* Cor da linha */
+                /* margin-bottom: 15px; */
+                /* Espaçamento superior e inferior */
+                position: relative;
+                top: 1rem;
             }
 
             .itens_descricao_tela_9 {
                 display: flex;
                 height: 65vh;
                 width: 63vw;
-                border: red 2px solid;
+                /* border: red 2px solid; */
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 0.5rem;
+                gap: 0.9rem;
+                position: relative;
+                top: 1rem;
 
                 .item_tela_9 {
                     display: flex;
                     height: 7vh;
                     width: 60vw;
-                    border: red 2px solid;
+                    /* border: red 2px solid; */
+                    /* background-color: aqua; */
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: 900;
+                    /* letter-spacing: 2px; */
+                    font-size: x-large;
+                    /* font-family: 'Courier New', Courier, monospace; */
                 }
             }
         }
@@ -92,8 +139,8 @@
             display: flex;
             height: 4%;
             width: 3%;
-            border: red 2px solid;
-            background-color: red;
+            /* border: red 2px solid; */
+            /* background-color: red; */
             position: relative;
             left: 3%;
             bottom: 45%;
@@ -102,6 +149,7 @@
                 display: flex;
                 height: 100%;
                 width: 100%;
+                color: #FFF;
             }
         }
     }

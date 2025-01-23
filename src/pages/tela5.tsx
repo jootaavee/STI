@@ -21,13 +21,13 @@ const tela5 = () => {
                     </Link>
                 </div>
                 <div className='inicio_tela_5'>
-
+                    INI 07/07
                 </div>
                 <div className='titulo_tela_5'>
-
+                    Concretagem da passarela FASSO-FANAT
                 </div>
                 <div className='fim_tela_5'>
-
+                    FIM 07/07
                 </div>
                 <div className='editar_tela_5'>
                     <Link to='/tela7'>
@@ -90,165 +90,6 @@ const tela5 = () => {
                     <div className='informação'>
                         info
                     </div>
-                </div>
-                <div className='descricao_tela_5'>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                </div>
-                <div className='descricao_tela_5'>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                </div>
-                <div className='descricao_tela_5'>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                </div>
-                <div className='descricao_tela_5'>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                </div>
-                <div className='descricao_tela_5'>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                </div>
-                <div className='descricao_tela_5'>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                    <div className='informação'>
-                        info
-                    </div>
-                </div>
-                <div className='espaco_tela_5'>
-
                 </div>
             </div>
         </div>
