@@ -1,10 +1,10 @@
 .container_tela_1 {
     display: flex;
-    flex-direction: column;
     height: 100vh;
     width: 100vw;
+    flex-direction: column;
 
-    background-color: #222961;
+    /* background-color: #222961; */
     background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 
 }
@@ -66,8 +66,8 @@
     /* border: red solid 2px; */
     background-image: url('../imagens/imagensCentroT1/clima.gif');
     background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: 50%;
+    background-size: 30vh;
+    background-position: center;
     width: 18vw;
     height: 30vh;
     border-radius: 30px;

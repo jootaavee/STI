@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './css/tela4.css'
+import { Link } from 'react-router-dom'
+import { IoMdAdd } from "react-icons/io"; //icone adicionar
 import BarraLateral from '../components/barralateral/barralateral.tsx';
-// import logo_add from '../pages/imagens_tela_4/+.png'
 import Detalhe from '../components/detalhe/detalhe.tsx';
-import { IoMdAdd } from "react-icons/io";
 
 // //imagens dos botoes
 // const assu = require('./imagensCentroT2/ASSU/normal.png');

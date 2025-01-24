@@ -1,9 +1,9 @@
 import React from 'react';
 import './css/tela6.css';
 import { Link } from 'react-router-dom';
-import logo_voltar from './imagens/imagens_tela_6/back.png'
-import logo_add from './imagens/imagens_tela_6/+.png'
-import logo_edicao from './imagens/imagens_tela_6/logo_editar.png'
+import { IoMdAdd } from "react-icons/io"; //icone adicionar
+import { FaRegEdit } from "react-icons/fa"; //icone editar
+import { FaArrowLeft } from "react-icons/fa"; //icone voltar
 import Detalhe from '../components/detalhe/detalhe.tsx';
 
 // const back = require('./imagensCentroT5/back.png')
@@ -18,23 +18,20 @@ const tela6 = () => {
             <div className='topo_tela_6'>
                 <div className='voltar_tela_6'>
                     <Link to='/tela4'>
-                        <img src={logo_voltar} className='logo_voltar_tela_6' />
+                        <FaArrowLeft style={{ color: 'white', fontSize: '200%' }} />
                     </Link>
                 </div>
                 <div className='inicio_tela_6'>
-                    <div className='editar_inicio_tela_6'>
-                        <img src={logo_edicao} className='logo_edicao_inicio_tela_6' alt='' />
-                    </div>
+                    INI
+                    <FaRegEdit style={{ color: 'white', fontSize: '150%' }} />
                 </div>
                 <div className='titulo_tela_6'>
-                    <div className='editar_titulo_tela_6'>
-                        <img src={logo_edicao} className='logo_edicao_titulo_tela_6' alt='' />
-                    </div>
+                    Título
+                    <FaRegEdit style={{ color: 'white', fontSize: '150%' }} />
                 </div>
                 <div className='fim_tela_6'>
-                    <div className='editar_fim_tela_6'>
-                        <img src={logo_edicao} className='logo_edicao_fim_tela_6' alt='' />
-                    </div>
+                    FIM
+                    <FaRegEdit style={{ color: 'white', fontSize: '150%' }} />
                 </div>
                 <div className='espaco_tela_6'>
                     {/* div usada para centralizar itens */}
@@ -43,32 +40,35 @@ const tela6 = () => {
             <div className='baixo_tela_6'>
                 <div className='titulo_descricao_tela_6'>
                     <div className='itens_titulo_tela_6'>
-
+                        Diárias
                     </div>
                     <div className='itens_titulo_tela_6'>
-
+                        Posto Mensal
                     </div>
                     <div className='itens_titulo_tela_6'>
-
+                        Valor calculado
                     </div>
                     <div className='itens_titulo_tela_6'>
-
+                        Itens
                     </div>
                     <div className='itens_titulo_tela_6'>
-
+                        Quantidades
                     </div>
                     <div className='itens_titulo_tela_6'>
-
+                        Unidades
                     </div>
                     <div className='itens_titulo_tela_6'>
-
+                        Valor Unitário
                     </div>
                     <div className='itens_titulo_tela_6'>
-
+                        Valor total
                     </div>
                 </div>
+                <div className='linha_tela_6'>
+
+                </div>
                 <div className='adicionar_descricao_tela_6'>
-                    <img src={logo_add} className='logo_adicao_tela_6' />
+                    <IoMdAdd style={{ color: 'white', fontSize: '350%' }} />
                 </div>
             </div>
         </div>
