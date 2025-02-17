@@ -6,7 +6,17 @@
     background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 }
 
+.edicao_tela_10{
+    padding: 20px;
+}
 
+.head_tela_10{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .lateral_tela_10 {
     display: flex;
@@ -38,13 +48,12 @@
     display: flex;
     height: 8%;
     width: 85%;
-    margin-top: 1rem;
+    margin: 10px;
     border-radius: 2rem;
     align-items: center;
     justify-content: center;
     color: rgb(151, 151, 151);
     font-size: 9px;
-
 }
 
 .nome_estagiarios_tela_10:hover {

@@ -137,13 +137,14 @@
 
         .confirmar_tela_9 {
             display: flex;
-            height: 4%;
-            width: 3%;
-            /* border: red 2px solid; */
+            align-items: center;
+            justify-content: center;
+            height: 6vh;
+            width: 3vw;
             /* background-color: red; */
             position: relative;
             left: 3%;
-            bottom: 45%;
+            bottom: 43%;
 
             .logo_correto_tela_9 {
                 display: flex;

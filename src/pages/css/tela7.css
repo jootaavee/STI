@@ -1,174 +1,158 @@
 .container_tela_7 {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    gap: 1.5rem;
 
     height: 100vh;
     width: 100vw;
 
-    gap: 1.5rem;
-
-    background-color: #222961;
     background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 
     .topo_tela_7 {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 5%;
 
         height: 22vh;
         width: 99vw;
 
-        gap: 5%;
-
-        border: red 2px solid;
-
-        .espaco_tela_7 {
-            display: flex;
-
-            height: 10vh;
-            width: 8vw;
-
-            position: relative;
-            left: 1.5rem;
-            bottom: 1.5rem;
-
-            /* border: red 2px solid; */
-        }
-
-
-
         .inicio_tela_7 {
             display: flex;
+            justify-content: space-evenly;
             align-items: center;
-            justify-content: end;
-            height: 10vh;
-            width: 17vw;
-            border: green 2px solid;
-            overflow: hidden;
 
-            .editar_inicio_tela_7 {
-                /* border: red 2px solid; */
-                height: 100vh;
-                width: 4vw;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            height: 10vh;
+            width: 15vw;
+
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+            color: #FFF;
+
         }
 
         .titulo_tela_7 {
             display: flex;
             align-items: center;
-            justify-content: end;
-            overflow: hidden;
-            height: 15vh;
-            width: 30vw;
-            border: red 2px solid;
+            justify-content: space-evenly;
 
-            .editar_titulo_tela_7 {
-                /* border: red 2px solid; */
-                height: 100vh;
-                width: 6vw;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            height: 15vh;
+            width: 28vw;
+
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            color: #FFF;
         }
+
 
         .fim_tela_7 {
             display: flex;
             align-items: center;
-            justify-content: end;
-            overflow: hidden;
-            height: 10vh;
-            width: 17vw;
-            border: blue 2px solid;
+            justify-content: space-evenly;
 
-            .editar_fim_tela_7 {
-                /* border: red 2px solid; */
-                height: 100vh;
-                width: 4vw;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            height: 10vh;
+            width: 15vw;
+
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+            color: #FFF;
         }
 
-
-        .confirmar_tela_7 {
+        .editar_tela_7 {
             display: flex;
+            align-items: center;
+            justify-content: center;
 
-            height: 10vh;
-            width: 8vw;
-
-            position: relative;
-            right: 1.5rem;
-            bottom: 1.5rem;
-
-            border: red 2px solid;
-            justify-content: right;
+            height: auto;
+            width: auto;
         }
     }
 
     .baixo_tela_7 {
+        overflow: hidden;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-
-        height: 72vh;
-        width: 90vw;
-
+        flex-direction: column;
         gap: 0.5rem;
 
-        border: red 2px solid;
+        height: 68vh;
+        width: 90vw;
+
+        border-radius: 1rem;
+
+        background-color: rgb(34, 41, 97, 0.85);
 
 
         .titulo_descricao_tela_7 {
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: center;
+            flex-direction: row;
+            overflow: hidden;
+            gap: 4%;
 
-            height: 10vh;
+            height: 3vh;
             width: 88vw;
 
-            position: relative;
-            bottom: 10rem;
-
-            gap: 3%;
-
-            border: red 2px solid;
+            margin-top: 30px;
 
             .itens_titulo_tela_7 {
                 display: flex;
-                height: 6vh;
-                width: 8vw;
-                border: red 2px solid;
+                margin: 11px;
+
+                height: auto;
+                width: auto;
+
+                font-weight: bold;
+                letter-spacing: 1px;
+                color: white;
             }
+        }
+
+        .linha_tela_7 {
+            display: flex;
+
+            height: 2px;
+            width: 95%;
+
+            margin-bottom: 15px;
+
+            background-color: #FFF;
         }
 
         .descricao_tela_7 {
             display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+
             height: 5vh;
             width: 85vw;
-            border: red 2px solid;
-            position: relative;
-            bottom: 10rem;
-        }
 
+            border-radius: 2rem;
 
-        .botao_adicao_tela7 {
-            border: red 2px solid;
-            height: 5vh;
-            width: 3vw;
-
-            .logo_adicao_tela_7 {
-                width: 3vw;
-                height: 6vh;
-            }
+            background-color: rgb(36, 44, 105, 1);
         }
     }
+}
+
+.botao_check_tela_7{
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    margin: 20px;
+}
+
+.descricao_tela_7 * {
+    display: flex;
+
+    height: auto;
+    width: auto;
+
+    letter-spacing: 1px;
+    color: #FFF;
 }

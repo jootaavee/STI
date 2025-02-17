@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../../css/faculdades.css";
 import PieChartComponent from '../../../components/pizza.tsx';
-// import Relogio from '../../components/relogio.tsx';
 import Data from '../../../components/data.tsx';
 import Detalhe from '../../../components/detalhe/detalhe.tsx';
 

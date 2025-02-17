@@ -1,4 +1,5 @@
 .container_tela_8 {
+    border: red solid 1px;
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -6,6 +7,7 @@
     background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 
     .lateral_tela_8 {
+        border: red solid 1px;
         display: flex;
         height: 100vh;
         width: 78vw;
@@ -18,7 +20,7 @@
             display: flex;
             height: 85vh;
             width: 65vw;
-            /* border: red 2px solid; */
+            border: rgb(0, 255, 179) 1px solid;
             flex-direction: column;
             align-items: center;
             gap: 1rem;
@@ -27,32 +29,21 @@
         }
 
         .tiulo_descricao_tela_8 {
+            border: red solid 1px;
+            padding: 10px;
             display: flex;
             height: 10vh;
             width: 63vw;
             /* background-color: aquamarine; */
-            position: relative;
-            top: 1rem;
             align-items: center;
             justify-content: center;
             gap: 5%;
-
-            .espaco_tela_8 {
-                display: flex;
-                height: 3vh;
-                width: 1.7vw;
-                /* border: red 2px solid;
-                background-color: red; */
-                position: relative;
-                bottom: 15%;
-                right: 0%;
-            }
 
             .inicio_tela_8 {
                 display: flex;
                 height: 6vh;
                 width: 15vw;
-                /* border: red 2px solid; */
+                border: red 2px solid; 
                 /* background-color: #2C335A; */
                 align-items: center;
                 justify-content: center;
@@ -67,7 +58,7 @@
                 display: flex;
                 height: 6vh;
                 width: 15vw;
-                /* border: red 2px solid; */
+                border: red 2px solid;
                 align-items: center;
                 justify-content: center;
                 color: white;
@@ -81,7 +72,7 @@
                 display: flex;
                 height: 6vh;
                 width: 15vw;
-                /* border: red 2px solid; */
+                border: red 2px solid; 
                 align-items: center;
                 justify-content: center;
                 color: white;
@@ -93,17 +84,16 @@
 
             .editar_tela_8 {
                 display: flex;
-                height: 3vh;
-                width: 1.7vw;
-                /* border: red 2px solid;
-                background-color: red; */
-                position: relative;
-                bottom: 15%;
-                right: 0%;
+                align-items: center;
+                justify-content: center;
+                height: 6vh;
+                width: 3vw;
+                border: red 2px solid;
             }
         }
 
         .linha_tela_8 {
+            border: red solid 2px;
             width: 95%;
             /* Largura total do contêiner */
             height: 2px;
@@ -112,35 +102,25 @@
             /* Cor da linha */
             /* margin-bottom: 15px; */
             /* Espaçamento superior e inferior */
-            position: relative;
             top: 1rem;
         }
 
         .itens_descricao_tela_8 {
-            display: flex;
-            height: 65vh;
+            height: 100%;
+            border: green 2px solid;
+            overflow: auto;
             width: 63vw;
-            /* border: red 2px solid; */
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             gap: 0.9rem;
-            position: relative;
-            top: 1rem;
 
             .item_tela_8 {
                 display: flex;
                 height: 7vh;
                 width: 60vw;
-                /* border: red 2px solid; */
-                /* background-color: aqua; */
                 align-items: center;
-                justify-content: center;
+                justify-content: space-around;
                 color: white;
                 font-weight: 900;
-                /* letter-spacing: 2px; */
                 font-size: x-large;
-                /* font-family: 'Courier New', Courier, monospace; */
             }
         }
     }

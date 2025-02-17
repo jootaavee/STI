@@ -66,28 +66,28 @@ const tela5 = () => {
 
                 </div>
                 <div className='descricao_tela_5'>
-                    <div className='informação'>
+                    <div className='informação_diarias'>
                         info
                     </div>
-                    <div className='informação'>
+                    <div className='informação_PM'>
                         info
                     </div>
-                    <div className='informação'>
+                    <div className='informação_VC'>
                         info
                     </div>
-                    <div className='informação'>
+                    <div className='informação_itens'>
                         info
                     </div>
-                    <div className='informação'>
+                    <div className='informação_quantidades'>
                         info
                     </div>
-                    <div className='informação'>
+                    <div className='informação_unidades'>
                         info
                     </div>
-                    <div className='informação'>
+                    <div className='informação_VU'>
                         info
                     </div>
-                    <div className='informação'>
+                    <div className='informação_VT'>
                         info
                     </div>
                 </div>

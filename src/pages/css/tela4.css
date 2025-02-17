@@ -1,4 +1,6 @@
 .container_tela_4 {
+    z-index: 0;
+    border: red solid 1px;
     display: flex;
     height: 200%;
     width: 100%;
@@ -8,6 +10,8 @@
 }
 
 .lateral_tela_4 {
+    z-index: 0;
+    border: solid red 1px;
     display: flex;
     height: 200vh;
     width: 78vw;
@@ -20,16 +24,19 @@
 }
 
 .chamados_tela_4 {
+    z-index: 0;
+    border: solid red 1px;
     display: flex;
     height: 100%;
     width: 78%;
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
-
 }
 
 .descricao_chamados_tela_4 {
+    z-index: 0;
+    border: solid red 1px;
     display: flex;
     height: 15vh;
     width: 60vw;
@@ -38,10 +45,11 @@
     border-radius: 3rem;
     background-size: cover;
     opacity: 0.8;
-
 }
 
 .descricao_chamados_tela_4:hover {
+    z-index: 0;
+    border: solid red 1px;
     display: flex;
     height: 15vh;
     width: 60vw;
@@ -52,9 +60,9 @@
     opacity: 1;
 }
 
-
-
 .adicionar_tela_4 {
+    z-index: 0;
+    border: red solid 1px;
     display: flex;
     height: 5%;
     width: 7%;
@@ -64,5 +72,4 @@
 
     justify-content: center;
     align-items: center;
-
 }

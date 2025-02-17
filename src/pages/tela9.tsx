@@ -58,7 +58,7 @@ const tela9 = () => {
                 </div>
                 <div className='confirmar_tela_9'>
                     <Link to='/tela8'>
-                        <CgCheck style={{ color: 'white', fontSize: '300%' }} />
+                        <CgCheck style={{ color: 'WhiteSmoke', fontSize: '500%' }} />
                     </Link>
                 </div>
             </div>

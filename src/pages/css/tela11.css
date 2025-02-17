@@ -6,6 +6,25 @@
     background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 }
 
+.edicao_tela_11{
+    padding: 20px;
+}
+
+.add_tela_11{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head_tela_11{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .lateral_tela_11 {
     display: flex;
     height: 100vh;
@@ -36,9 +55,9 @@
     display: flex;
     height: 8%;
     width: 85%;
-    margin-top: 1rem;
     border-radius: 2rem;
     align-items: center;
+    margin: 10px;
     justify-content: center;
     color: rgb(151, 151, 151);
     font-size: 9px;

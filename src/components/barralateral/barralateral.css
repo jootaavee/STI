@@ -3,6 +3,7 @@
     height: 100vh;
     width: 22vw;
     position: fixed;
+    overflow: hidden;
 }
 
 .barra_lateral {
@@ -32,28 +33,28 @@
     flex-direction: column;
     width: 15vw;
     gap: 1.5rem;
-
 }
 
 .hover:hover {
     background-color: rgb(36, 44, 105, 1);
     border-radius: 2rem;
-
 }
 
 .dashboard {
     display: flex;
     align-items: center;
+    overflow: hidden;
     width: 100%;
     background-color: rgba(63, 68, 104, 0.3);
     border-radius: 2rem;
     border: rgb(180, 180, 180) 1px solid;
-
 }
 
 
 .setores {
     width: 100%;
+    overflow: hidden;
+    overflow: hidden;
     /* border: red solid 1px; */
     align-items: center;
     display: flex;
@@ -64,6 +65,7 @@
 
 .chamados {
     width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     /* border: red 1px solid; */
@@ -74,6 +76,7 @@
 
 .materiais {
     width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     /* border: red solid 1px; */
@@ -84,6 +87,7 @@
 
 .profissionais {
     width: 100%;
+    overflow: hidden;
     align-items: center;
     display: flex;
     /* border: red solid 1px; */
@@ -93,6 +97,7 @@
 }
 
 .titulodeBL {
+    overflow: hidden;
     color: white;
     font-size: 150%;
     text-shadow: 1.5px 1.5px 3px black;
