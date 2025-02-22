@@ -38,6 +38,8 @@
 }
 
 .estagiarios_tela_11 {
+    border: red solid 2px;
+    overflow: auto;
     display: flex;
     height: 80%;
     width: 25%;
@@ -70,6 +72,7 @@
 }
 
 .chamados_tela_11 {
+    border: red solid 2px;
     display: flex;
     height: 80%;
     width: 60%;
@@ -82,7 +85,9 @@
 }
 
 .chamados_grafico_tela_11 {
+    border: red solid 2px;
     display: flex;
+    flex-direction: column;
     height: 40%;
     width: 90%;
     background-color: #222961;

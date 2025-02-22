@@ -7,6 +7,7 @@ import Detalhe from '../../../components/detalhe/detalhe.tsx';
 import Relogio from '../../../components/relogio.tsx';
 import Data from '../../../components/data.tsx'
 import LineChartComponent from '../../../components/linhas_faculdades.tsx';
+import logo from '../../imagens/imagensFaculdades/Frame 3.png'
 
 const data = [
     { name: 'sti', value: 400 },
@@ -43,9 +44,7 @@ const fanat = () => {
                         <FaArrowLeft className='voltar_tela_fanat' style={{ color: 'white', fontSize: '300%' }} />
                     </Link>
                 </div>
-                <div className='logo_fanat'>
-
-                </div>
+                <img src={logo} alt="logo_fanat" className="logo_fanat" />
             </div>
             <div className='centro_faculdades'>
                 <div className='dados_faculdades'>

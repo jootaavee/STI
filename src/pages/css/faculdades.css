@@ -22,7 +22,6 @@
     justify-content: center;
     height: 10vh;
     width: 5.5vw;
-    background-color: #2c3158;
     position: fixed;
     left: 6%;
 }
@@ -180,8 +179,5 @@
     display: flex;
     height: 90%;
     aspect-ratio: 1 / 1;
-    background-image: url(../imagens/imagens_tela_3/logo_fanat.png);
-    background-size: cover;
-    background-position: center;
     border-radius: 100%;
 }
