@@ -19,6 +19,8 @@
         width: 99vw;
 
         .inicio_tela_7 {
+            overflow: hidden;
+            border: red solid 1px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -34,6 +36,7 @@
         }
 
         .titulo_tela_7 {
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -49,6 +52,7 @@
 
 
         .fim_tela_7 {
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -62,7 +66,8 @@
             color: #FFF;
         }
 
-        .editar_tela_7 {
+        .check_tela_7 {
+            border: rgb(0, 154, 51) solid 2px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -155,4 +160,8 @@
 
     letter-spacing: 1px;
     color: #FFF;
+}
+
+.edit_tela_7{
+    border: red solid 2px;
 }

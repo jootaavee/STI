@@ -38,7 +38,7 @@ const tela7 = () => {
                         <FaRegEdit style={{ color: 'white', fontSize: '130%' }} />
                     </div>
                 </div>
-                <div className='editar_tela_7'>
+                <div className='check_tela_7'>
                     <Link to='/tela5'>
                         <FaCheck style={{ color: 'white', fontSize: '250%' }} />
                     </Link>

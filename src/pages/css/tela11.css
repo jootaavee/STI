@@ -26,6 +26,7 @@
 }
 
 .lateral_tela_11 {
+    overflow: hidden;
     display: flex;
     height: 100vh;
     width: 78vw;
@@ -33,8 +34,7 @@
     justify-content: center;
     gap: 2.5rem;
     flex-direction: row;
-    position: absolute;
-    right: 0rem;
+    margin-left: 22%;
 }
 
 .estagiarios_tela_11 {
@@ -72,6 +72,7 @@
 }
 
 .chamados_tela_11 {
+    overflow: hidden;
     border: red solid 2px;
     display: flex;
     height: 80%;
@@ -86,6 +87,7 @@
 
 .chamados_grafico_tela_11 {
     border: red solid 2px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     height: 40%;

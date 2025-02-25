@@ -164,6 +164,17 @@ const tela8 = () => {
                                 magnus
                             </div>
                         </div>
+                        <div className='item_tela_8'>
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

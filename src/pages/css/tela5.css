@@ -31,6 +31,7 @@
         }
 
         .inicio_tela_5 {
+            overflow: hidden;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -45,6 +46,7 @@
         }
 
         .titulo_tela_5 {
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -60,6 +62,7 @@
 
 
         .fim_tela_5 {
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: space-evenly;

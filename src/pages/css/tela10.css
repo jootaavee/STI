@@ -19,6 +19,7 @@
 }
 
 .lateral_tela_10 {
+    overflow: hidden;
     display: flex;
     height: 100vh;
     width: 78vw;
@@ -26,8 +27,7 @@
     justify-content: center;
     gap: 2.5rem;
     flex-direction: row;
-    position: absolute;
-    right: 0rem;
+    margin-left: 22%;
 }
 
 .estagiarios_tela_10 {
@@ -64,6 +64,7 @@
 }
 
 .chamados_tela_10 {
+    overflow: hidden;
     display: flex;
     border: red solid 2px;
     height: 80%;
@@ -77,6 +78,7 @@
 }
 
 .chamados_grafico_tela_10 {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     border: rgb(0, 26, 255) solid 2px;
@@ -116,7 +118,6 @@
 }
 
 .linha_estagiarios_tela_10{
-    border: red solid 2px;
     width: 99%;
     display: flex;
     justify-content: center;
@@ -126,7 +127,6 @@
 .grafico_profissionais_tela_10{
     width: 100%;
     height: 100%;
-    border: solid red 2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,6 +134,7 @@
 
 .chamados_estagiarios_tela_10 {
     border: rgb(255, 0, 212) solid 2px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     overflow: auto;
