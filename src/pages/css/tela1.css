@@ -6,7 +6,6 @@
 
     /* background-color: #222961; */
     background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
-
 }
 
 .centro_tela_1 {
@@ -48,25 +47,71 @@
     width: 100%;
 }
 
-.grafico_PIZZA {
-    overflow: hidden;
+.titulo_pizza_tela_1{
+    margin: 50px;
+    height: 5%;
+    width: 90%;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+}
 
-    /* border: 2px solid red; */
+.pequenas_estatisticas_tela_1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    height: 35%;
+}
+
+.pequeno_detalhe{
+    width: 50%;
+    border-radius: 12px;
+    display: flex;
+    height: 30%;
+    }
+
+.estatistica{
+    width: 50%;
+    display: flex;
+    font-size: 17px;
+    color: whitesmoke;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: row;
+}
+
+.PIZZA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45%;
+}
+
+.grafico_PIZZA {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    overflow: hidden;
     height: 80vh;
     width: 23vw;
     background-color: rgb(34, 41, 97, 0.85);
     border-radius: 40px;
-    /* border: red 2px solid; */
-
 }
 
 .tabela_hora {
     overflow: hidden;
 
-    /* border: red solid 2px; */
     background-image: url('../imagens/imagensCentroT1/clima.gif');
     background-repeat: no-repeat;
-    background-size: 30vh;
+    background-size: 20vh;
     background-position: center;
     width: 18vw;
     height: 30vh;
@@ -91,17 +136,9 @@
     text-decoration: none;
 }
 
-.grafico_PIZZA {
-    align-items: start;
-    display: flex;
-    justify-content: center;
-    /* border: red 2px solid; */
-}
-
 .grafico_MAT {
     display: flex;
     overflow: hidden;
-    /* border: red 2px solid; */
     width: 39vw;
     background-color: rgb(34, 41, 97, 0.85);
     border-radius: 40px;
@@ -116,7 +153,6 @@
 .tabela_QDC {
     overflow: hidden;
 
-    /* border: red 2px solid; */
     background-color: rgb(34, 41, 97, 0.85);
     width: 18vw;
     height: 30vh;

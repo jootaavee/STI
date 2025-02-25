@@ -18,14 +18,18 @@
 
 .voltar_faculdades {
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 10vh;
     width: 5.5vw;
-    background-color: #2c3158;
     position: fixed;
     left: 6%;
-
 }
 
+.MAT_tela_fanat{
+    width: 400px;
+    height: 150px;
+}
 
 .centro_faculdades {
     /* border: red 2px solid; */
@@ -59,48 +63,121 @@
     gap: 4rem;
 }
 
+.descricao_chamados_tela_faculdades{
+    height: 12vh;
+    width: 55vw;
+    margin: 20px;
+    background-image: url('../imagens/imagens_tela_4/fundo_fanat.jpeg');
+    background-position: center;
+    border-radius: 3rem;
+    background-size: cover;
+}
+
 .esquerda_faculdades {
+    overflow: hidden;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../imagens/imagensCentroT1/clima.gif');
     /* margin-left: 60px; */
     height: 100%;
     width: 47%;
-    background-color: #2c3158;
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 2rem;
+    background-color: rgb(20, 120, 141);
 }
 
 .direita_faculdades {
+    overflow: hidden;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     width: 47%;
     background-color: #2c3158;
     border-radius: 2rem;
+} .chamados_por_semana{
+    color: #9EA2CD;
+    font-size: 26px;
 }
 
 .inferior_faculdades {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 55%;
     width: 100%;
     background-color: #2c3158;
     border-radius: 2rem;
-    /* border: red 2px solid; */
 }
 
+  .inferior_faculdades::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem (para rolagem horizontal) */
+  }
+  
+  /* Estiliza a parte de fundo da barra de rolagem */
+  .inferior_faculdades::-webkit-scrollbar-track {
+    background: #3a406a; /* Cor de fundo da trilha */
+    border-radius: 10px; /* Arredonda os cantos da trilha */
+  }
+  
+  /* Estiliza a parte deslizante (thumb) da barra de rolagem */
+  .inferior_faculdades::-webkit-scrollbar-thumb {
+    background-color: #2c3158; /* Cor do thumb */
+    border-radius: 10px; /* Arredonda os cantos do thumb */
+    border: 3px solid #3f4990; /* Borda do thumb */
+  }
+
+  /* Efeito quando o usuário passa o mouse sobre a barra de rolagem */
+  .inferior_faculdades::-webkit-scrollbar-thumb:hover {
+    background-color: #2c3158; /* Cor do thumb quando o mouse passa sobre ele */
+  }  
+
 .chamados_faculdades {
+    overflow: hidden;
     height: 90%;
     width: 25%;
-    /* margin-right: 60px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 2rem;
     background: linear-gradient(0deg, #5282EC, #2F4A86);
     display: flex;
+}
+
+.grafico_pizza_faculdades{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dados_tela_faculdades{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 270px;
+    width: 400px;
+} .dados_tela_faculdades h1{
+    color: whitesmoke;
+    font-size: 21px;
+}   .dados_tela_faculdades span{
+    color: rgb(0, 69, 27);
+    font-size: 21px;
 }
 
 .logo_fanat {
     display: flex;
     height: 90%;
     aspect-ratio: 1 / 1;
-    background-image: url(../imagens/imagens_tela_3/logo_fanat.png);
-    background-size: cover;
-    background-position: center;
     border-radius: 100%;
-
-
 }

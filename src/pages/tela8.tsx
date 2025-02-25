@@ -13,9 +13,6 @@ const tela8 = () => {
             <div className='lateral_tela_8'>
                 <div className='descricao_tela_8'>
                     <div className='tiulo_descricao_tela_8'>
-                        <div className='espaco_tela_8'>
-                            {/* div usada para centralizar itens */}
-                        </div>
                         <div className='inicio_tela_8'>
                             Matéria
                         </div>
@@ -27,7 +24,7 @@ const tela8 = () => {
                         </div>
                         <div className='editar_tela_8'>
                             <Link to='/tela9'>
-                                <FaRegEdit style={{ color: 'white', fontSize: '140%' }} />
+                                <FaRegEdit style={{ color: 'white', fontSize: '200%' }} />
                             </Link>
                         </div>
                     </div>
@@ -36,25 +33,147 @@ const tela8 = () => {
                     </div>
                     <div className='itens_descricao_tela_8'>
                         <div className='item_tela_8'>
-                            1
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
                         </div>
                         <div className='item_tela_8'>
-                            2
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
                         </div>
                         <div className='item_tela_8'>
-                            3
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
                         </div>
                         <div className='item_tela_8'>
-                            4
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
                         </div>
                         <div className='item_tela_8'>
-                            5
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
                         </div>
                         <div className='item_tela_8'>
-                            6
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
                         </div>
                         <div className='item_tela_8'>
-                            7
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
+                        </div>
+                        <div className='item_tela_8'>
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
+                        </div>
+                        <div className='item_tela_8'>
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
+                        </div>
+                        <div className='item_tela_8'>
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
+                        </div>
+                        <div className='item_tela_8'>
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
+                        </div>
+                        <div className='item_tela_8'>
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
+                        </div>
+                        <div className='item_tela_8'>
+                            <div className='materia'>
+                                magnus
+                            </div>
+                            <div className='unidade'>
+                                magnus
+                            </div>
+                            <div className='preco'>
+                                magnus
+                            </div>
                         </div>
                     </div>
                 </div>

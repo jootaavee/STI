@@ -1,127 +1,128 @@
 .container_tela_6 {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    gap: 1.5rem;
 
     height: 100vh;
     width: 100vw;
-
-    gap: 1.5rem;
 
     background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 
     .topo_tela_6 {
         display: flex;
-        height: 22vh;
-        width: 99vw;
         align-items: center;
         justify-content: center;
         gap: 5%;
-        position: relative;
-        bottom: 1%;
+
+        height: 22vh;
+        width: 99vw;
 
         .voltar_tela_6 {
             display: flex;
-            height: auto;
-            width: 8vw;
-            position: relative;
-            right: 1.5rem;
-            bottom: 1.5rem;
             align-items: center;
             justify-content: center;
+
+            height: auto;
+            width: auto;
+
+            right: 1.5rem;
+            bottom: 1.5rem;
         }
 
         .inicio_tela_6 {
             display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
             height: 10vh;
             width: 15vw;
+
             font-size: x-large;
-            color: #FFF;
             font-weight: bold;
             text-align: center;
-            justify-content: center;
-            align-items: center;
-            gap: 3%;
+            color: #FFF;
         }
 
         .titulo_tela_6 {
             display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
             height: 15vh;
             width: 28vw;
+
             font-size: xx-large;
-            color: #FFF;
             font-weight: bold;
             text-align: center;
-            justify-content: center;
-            align-items: center;
-            gap: 3%;
+            color: #FFF;
         }
 
         .fim_tela_6 {
             display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
             height: 10vh;
             width: 15vw;
+
             font-size: x-large;
-            color: #FFF;
             font-weight: bold;
             text-align: center;
-            justify-content: center;
-            align-items: center;
-            gap: 3%;
-        }
-
-        .espaco_tela_6 {
-            display: flex;
-
-            height: 10vh;
-            width: 8vw;
-
+            color: #FFF;
         }
     }
 
     .baixo_tela_6 {
+        overflow: hidden;
+        border: red solid 2px;
         display: flex;
-        height: 68vh;
-        width: 90vw;
+        align-items: center;
         flex-direction: column;
         gap: 0.5rem;
-        align-items: center;
-        justify-content: center;
-        background-color: rgb(34, 41, 97, 0.85);
-        border-radius: 1rem;
-        position: relative;
-        bottom: 5%;
 
+        height: 68vh;
+        width: 90vw;
+
+        border-radius: 1rem;
+
+        background-color: rgb(34, 41, 97, 0.85);
 
         .titulo_descricao_tela_6 {
             display: flex;
-            height: 3vh;
-            width: 88vw;
-            flex-direction: row;
             align-items: center;
             justify-content: center;
-            gap: 4%;
+            flex-direction: row;
             overflow: hidden;
-            position: relative;
-            bottom: 35%;
+            gap: 4%;
+
+            height: 3vh;
+            width: 88vw;
+
+            margin-top: 30px;
 
             .itens_titulo_tela_6 {
                 display: flex;
+                margin: 11px;
+
                 height: auto;
                 width: auto;
-                color: white;
+
                 font-weight: bold;
                 letter-spacing: 1px;
+                color: white;
             }
         }
 
         .linha_tela_6 {
-            width: 95%;
+            display: flex;
+
             height: 2px;
+            width: 95%;
+
+            margin-bottom: 15px;
+
             background-color: #FFF;
-            position: relative;
-            bottom: 35%;
         }
 
         .adicionar_descricao_tela_6 {
@@ -138,4 +139,12 @@
             align-items: center;
         }
     }
+}
+
+.botao_check_tela_6{
+    border: rgb(0, 255, 213) solid 2px;
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    margin: 20px;
 }

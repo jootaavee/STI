@@ -62,8 +62,43 @@ const Tela1 = () => {
 
                 <div className='parte_direita_tela_1'>
                     <div className='grafico_PIZZA'>
+                        <div className='titulo_pizza_tela_1'>
+                            CHAMADOS POR SETOR
+                        </div>
                         <div className='PIZZA'>
                             <PieChartComponent data={data} />
+                        </div>
+                        <div className='pequenas_estatisticas_tela_1'>
+                            <div className='estatistica'>Exatas
+                                <div className='pequeno_detalhe' style={{'backgroundColor': '#4BB9EC'}}>
+
+                                </div>
+                            </div>
+                            <div className='estatistica'>Humanas
+                                <div className='pequeno_detalhe' style={{'backgroundColor': '#FF5DF9'}}>
+                    
+                                </div>
+                            </div>
+                            <div className='estatistica'>Reitorias
+                                <div className='pequeno_detalhe' style={{'backgroundColor': '#FF4D4D'}}>
+                    
+                                </div>
+                            </div>
+                            <div className='estatistica'>Natureza
+                                <div className='pequeno_detalhe' style={{'backgroundColor': '#54E360'}}>
+                    
+                                </div>
+                            </div>
+                            <div className='estatistica'>Cidades
+                                <div className='pequeno_detalhe' style={{'backgroundColor': '#FF884D'}}>
+                    
+                                </div>
+                            </div>
+                            <div className='estatistica'>FAEF
+                                <div className='pequeno_detalhe' style={{'backgroundColor': '#76E2F8'}}>
+                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

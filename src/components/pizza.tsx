@@ -8,7 +8,7 @@ const COLORS = ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'
 // Componente do gráfico de pizza
 const PieChartComponent = ({ data }) => {
     return (
-        <PieChart width={400} height={400}> {/* Dimensões do gráfico */}
+        <PieChart width={400} height={400}> class {/* Dimensões do gráfico */}
             <Pie
                 data={data}
                 cx={200} // Centro X ajustado para o novo tamanho

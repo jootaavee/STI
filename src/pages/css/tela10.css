@@ -6,9 +6,20 @@
     background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 }
 
+.edicao_tela_10{
+    padding: 20px;
+}
 
+.head_tela_10{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .lateral_tela_10 {
+    overflow: hidden;
     display: flex;
     height: 100vh;
     width: 78vw;
@@ -16,11 +27,12 @@
     justify-content: center;
     gap: 2.5rem;
     flex-direction: row;
-    position: absolute;
-    right: 0rem;
+    margin-left: 22%;
 }
 
 .estagiarios_tela_10 {
+    border: rgb(0, 151, 128) solid 2px;
+    overflow: auto;
     display: flex;
     height: 80%;
     width: 25%;
@@ -38,13 +50,12 @@
     display: flex;
     height: 8%;
     width: 85%;
-    margin-top: 1rem;
+    margin: 10px;
     border-radius: 2rem;
     align-items: center;
     justify-content: center;
     color: rgb(151, 151, 151);
     font-size: 9px;
-
 }
 
 .nome_estagiarios_tela_10:hover {
@@ -53,7 +64,9 @@
 }
 
 .chamados_tela_10 {
+    overflow: hidden;
     display: flex;
+    border: red solid 2px;
     height: 80%;
     width: 60%;
     background-color: rgb(41, 45, 81, 0.85);
@@ -65,14 +78,66 @@
 }
 
 .chamados_grafico_tela_10 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: rgb(0, 26, 255) solid 2px;
     display: flex;
     height: 40%;
     width: 90%;
     background-color: #222961;
 }
 
-.chamados_estagiarios_tela_10 {
+.titulo_grafico_prof_tela_10{
+    font-size: 20px;
+    height: 15%;
+    width: 95%;
+    text-align: center;
+    color: #878CB5;
+    margin: 20px;
+    font-weight:bolder;
+}
+
+.info_estagiario_tela_10{
+    margin: 35px;
     display: flex;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: red solid 2px;
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+.numero{
+    color: #24F2FF;
+}
+
+.linha_estagiarios_tela_10{
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.grafico_profissionais_tela_10{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chamados_estagiarios_tela_10 {
+    border: rgb(255, 0, 212) solid 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
     height: 40%;
     width: 90%;
     background-color: #222961;

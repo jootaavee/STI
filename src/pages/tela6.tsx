@@ -23,18 +23,15 @@ const tela6 = () => {
                 </div>
                 <div className='inicio_tela_6'>
                     INI
-                    <FaRegEdit style={{ color: 'white', fontSize: '150%' }} />
+                    <FaRegEdit style={{ color: 'white', fontSize: '130%' }} />
                 </div>
                 <div className='titulo_tela_6'>
                     Título
-                    <FaRegEdit style={{ color: 'white', fontSize: '150%' }} />
+                    <FaRegEdit style={{ color: 'white', fontSize: '130%' }} />
                 </div>
                 <div className='fim_tela_6'>
                     FIM
-                    <FaRegEdit style={{ color: 'white', fontSize: '150%' }} />
-                </div>
-                <div className='espaco_tela_6'>
-                    {/* div usada para centralizar itens */}
+                    <FaRegEdit style={{ color: 'white', fontSize: '130%' }} />
                 </div>
             </div>
             <div className='baixo_tela_6'>
@@ -67,8 +64,8 @@ const tela6 = () => {
                 <div className='linha_tela_6'>
 
                 </div>
-                <div className='adicionar_descricao_tela_6'>
-                    <IoMdAdd style={{ color: 'white', fontSize: '350%' }} />
+                <div className='botao_check_tela_6'>
+                    <IoMdAdd style={{ color: 'white', fontSize: '250%' }} />
                 </div>
             </div>
         </div>

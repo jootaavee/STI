@@ -1,7 +1,6 @@
 .container_tela_5 {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 1.5rem;
 
@@ -19,9 +18,6 @@
         height: 22vh;
         width: 99vw;
 
-        position: relative;
-        bottom: 1%;
-
         .voltar_tela_5 {
             display: flex;
             align-items: center;
@@ -30,14 +26,14 @@
             height: auto;
             width: auto;
 
-            position: relative;
             right: 1.5rem;
             bottom: 1.5rem;
         }
 
         .inicio_tela_5 {
+            overflow: hidden;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
 
             height: 10vh;
@@ -47,11 +43,13 @@
             font-weight: bold;
             text-align: center;
             color: #FFF;
-
         }
 
         .titulo_tela_5 {
+            overflow: hidden;
             display: flex;
+            align-items: center;
+            justify-content: space-evenly;
 
             height: 15vh;
             width: 28vw;
@@ -64,9 +62,10 @@
 
 
         .fim_tela_5 {
+            overflow: hidden;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
 
             height: 10vh;
             width: 15vw;
@@ -85,16 +84,15 @@
             height: auto;
             width: auto;
 
-            position: relative;
             left: 1.5rem;
             bottom: 1.5rem;
         }
     }
 
     .baixo_tela_5 {
+        overflow: hidden;
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         gap: 0.5rem;
 
@@ -103,11 +101,7 @@
 
         border-radius: 1rem;
 
-        position: relative;
-        bottom: 5%;
-
         background-color: rgb(34, 41, 97, 0.85);
-
 
         .titulo_descricao_tela_5 {
             display: flex;
@@ -120,11 +114,11 @@
             height: 3vh;
             width: 88vw;
 
-            position: relative;
-            bottom: 35%;
+            margin-top: 30px;
 
             .itens_titulo_tela_5 {
                 display: flex;
+                margin: 11px;
 
                 height: auto;
                 width: auto;
@@ -141,8 +135,6 @@
             height: 2px;
             width: 95%;
 
-            position: relative;
-            bottom: 35%;
             margin-bottom: 15px;
 
             background-color: #FFF;
@@ -159,21 +151,17 @@
 
             border-radius: 2rem;
 
-            position: relative;
-            bottom: 35%;
-
             background-color: rgb(36, 44, 105, 1);
-
-            .informação {
-                display: flex;
-
-                height: auto;
-                width: auto;
-
-                letter-spacing: 1px;
-                color: #FFF;
-
-            }
         }
     }
+}
+
+.descricao_tela_5 * {
+    display: flex;
+
+    height: auto;
+    width: auto;
+
+    letter-spacing: 1px;
+    color: #FFF;
 }
