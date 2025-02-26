@@ -4,7 +4,6 @@
     width: 100vw;
     flex-direction: column;
 
-    /* background-color: #222961; */
     background-image: url(../imagens/imagensCentroT1/fundo_3.jpeg);
 }
 
@@ -19,14 +18,11 @@
     right: 0rem;
     
     .parte_esquerda_tela_1 {
-        /* overflow: hidden; */
-    
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         margin-left: 6%;
-        /* border: red 2px solid; */
 
         .superior_esquerda_tela_1 {
             overflow: hidden;
@@ -50,12 +46,28 @@
                 background-color: rgb(34, 41, 97, 0.85);
                 
                 .titulo_QDC {
+                    display: flex;
+                    width: 90%;
                     color: whitesmoke;
                     margin-top: 1vh;
                     margin-left: 1vw;
-                    font-size: 0.8vw;
+                    font-size: 0.6vw;
                 }
                 .desc_titulo_QDC{
+                    color: whitesmoke;
+                    /* margin-top: 1vh; */
+                    margin-left: 1vw;
+                    font-size: 1vw;
+                }
+                .titulo_QDCS{
+                    display: flex;
+                    width: 90%;
+                    color: whitesmoke;
+                    margin-top: 1vh;
+                    margin-left: 1vw;
+                    font-size: 0.6vw;
+                }
+                .desc_titulo_QDCS{
                     color: whitesmoke;
                     /* margin-top: 1vh; */
                     margin-left: 1vw;
@@ -68,7 +80,7 @@
             
                 background-image: url('../imagens/imagensCentroT1/clima.gif');
                 background-repeat: no-repeat;
-                background-size: 20vh;
+                background-size: 16vh;
                 background-position: center;
                 width: 18vw;
                 height: 30vh;
@@ -78,34 +90,51 @@
                 justify-content: center;
                 align-items: center;
                 background-color: rgb(20, 120, 141);
+                /* border: red 2px solid; */
                 
                 .data {
+                    font-size: 2.2vw;
                     color: white;
                 }
                 .relogio {
+                    font-size: 2.2vw;
                     color: white;
                 }
             }
         }
 
-        .grafico_MAT {
+        .tabela_MAT {
             display: flex;
             overflow: hidden;
             width: 39vw;
             background-color: rgb(34, 41, 97, 0.85);
             border-radius: 3.5vw;
             height: 40vh;
-            background-size: contain;
             align-items: center;
-            justify-content: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            /* gap: 4vh; */
             
-            .MAT {
+            .titulo_MAT{
                 display: flex;
-                /* height: 36vh; */
-                width: 39vw;
-                margin-top: 3vh;
-                margin-right: 2.5vw;
+                align-items: center;
+                justify-content: center;
+                width: 25vw;
+                color: whitesmoke;
+                /* margin-bottom: 2.5vh; */
+                font-size: 0.85vw;
+            }
 
+            .grafico_MAT {
+                display: flex;
+                height: 28vh;
+                width: 39vw;
+                margin-right: 2.5vw;
+                /* border: red 2px solid; */
+                /* justify-content: center; */
+                align-items: center;
+                white-space: nowrap;
+                overflow: hidden;
             }
         }
     }

@@ -9,6 +9,7 @@ import Detalhe from '../components/detalhe/detalhe.tsx';
 //graficos
 import PieChartComponent from '../components/pizza.tsx';
 import LineChartComponent from '../components/linhas.tsx';
+import { ResponsiveContainer } from 'recharts';
 
 const Tela1 = () => {
     //Dados para o gráfico de pizza
@@ -53,7 +54,17 @@ const Tela1 = () => {
                             </div>
                             <div className='desc_titulo_QDC'>
                                 <body>
-                                descrição quantidade
+                                    x2000
+                                </body>
+                            </div>
+                            <div className='titulo_QDCS'>
+                                <h1>
+                                    Quantidade de chamados por semana
+                                </h1>
+                            </div>
+                            <div className='desc_titulo_QDCS'>
+                                <body>
+                                    x 35
                                 </body>
                             </div>
                         </div>
@@ -62,8 +73,13 @@ const Tela1 = () => {
                             <h1 className='relogio'>{<Relogio />}</h1>
                         </div>
                     </div>
-                    <div className='grafico_MAT'>
-                        <div className='MAT'>
+                    <div className='tabela_MAT'>
+                        <div className='titulo_MAT'>
+                            <h1>
+                                Materiais usados na semana
+                            </h1>
+                        </div>
+                        <div className="grafico_MAT">
                             <LineChartComponent data={data2} />
                         </div>
                     </div>
