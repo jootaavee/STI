@@ -44,9 +44,18 @@ const Tela1 = () => {
 
             <div className='centro_tela_1'>
                 <div className='parte_esquerda_tela_1'>
-                    <div className='parte_superior_tela_1'>
+                    <div className='superior_esquerda_tela_1'>
                         <div className='tabela_QDC'>
-                            <div className='titulo_QDC'><h1>Quantidade de chamados por mês</h1></div>
+                            <div className='titulo_QDC'>
+                                <h1>
+                                Quantidade de chamados por mês
+                                </h1>
+                            </div>
+                            <div className='desc_titulo_QDC'>
+                                <body>
+                                descrição quantidade
+                                </body>
+                            </div>
                         </div>
                         <div className='tabela_hora'>
                             <h1 className='data'>{<Data />}</h1>
@@ -69,27 +78,32 @@ const Tela1 = () => {
                             <PieChartComponent data={data} />
                         </div>
                         <div className='pequenas_estatisticas_tela_1'>
-                            <div className='estatistica'>Exatas
+                            <div className='estatistica'>
+                                Exatas
                                 <div className='pequeno_detalhe' style={{'backgroundColor': '#4BB9EC'}}>
 
                                 </div>
                             </div>
-                            <div className='estatistica'>Humanas
+                            <div className='estatistica'>
+                                Humanas
                                 <div className='pequeno_detalhe' style={{'backgroundColor': '#FF5DF9'}}>
                     
                                 </div>
                             </div>
-                            <div className='estatistica'>Reitorias
+                            <div className='estatistica'>
+                                Reitorias
                                 <div className='pequeno_detalhe' style={{'backgroundColor': '#FF4D4D'}}>
                     
                                 </div>
                             </div>
-                            <div className='estatistica'>Natureza
+                            <div className='estatistica'>
+                                Natureza
                                 <div className='pequeno_detalhe' style={{'backgroundColor': '#54E360'}}>
                     
                                 </div>
                             </div>
-                            <div className='estatistica'>Cidades
+                            <div className='estatistica'>
+                                Cidades
                                 <div className='pequeno_detalhe' style={{'backgroundColor': '#FF884D'}}>
                     
                                 </div>
