@@ -48,19 +48,23 @@ const fanat = () => {
             </div>
             <div className='centro_faculdades'>
                 <div className='dados_faculdades'>
-                    <div className='superior_faculdades'>
-                        <div className='esquerda_faculdades'>
-                            <h1 className='data'>{<Data />}</h1>
-                            <h1 className='relogio'>{<Relogio />}</h1>
+                    <div className='superior_dados_faculdades'>
+                        <div className='esquerda_dados_faculdades'>
+                            <div className='data_faculdades'>
+                                    {<Data />}
+                            </div>
+                            <div className='relogio_faculdades'>
+                                    {<Relogio />}
+                            </div>
                         </div>
-                        <div className='direita_faculdades'>
+                        <div className='direita_dados_faculdades'>
                             <div><h1 className='chamados_por_semana'>Chamados por semana</h1></div>
                             <div className='MAT_tela_fanat'>
                                 <LineChartComponent data={data2} />
                             </div>
                         </div>
                     </div>
-                    <div className='inferior_faculdades'>
+                    <div className='inferior_dados_faculdades'>
                         <Link to="/tela5">
                             <div className='descricao_chamados_tela_faculdades'>
                         
@@ -84,21 +88,36 @@ const fanat = () => {
                     </div>
                 </div>
                 <div className='chamados_faculdades'>
-                    <PieChartComponent data={data} />
-                    <div className="dados_tela_faculdades">
+                    <div className='grafico_pizza_faculdades'>
+                        <PieChartComponent data={data} />
+                    </div>
+                    <div className="dados_chamados_faculdades">
                         <div className='titulo_dados_faculdades'>
-                            <h1>chamados por <span>Dia</span></h1>
-                            <h1>x30</h1>
+                            <h1>chamados por <span>
+                                Dia</span>
+                            </h1>
+                            <h2>
+                                x30
+                            </h2>
                         </div>
 
                         <div className='titulo_dados_faculdades'>
-                            <h1>chamados por <span>Semana</span></h1>
-                            <h1>x30</h1>
+                            <h1>chamados por <span>
+                                    Semana
+                                </span>
+                            </h1>
+                            <h2>
+                                x30
+                            </h2>
                         </div>
-
                         <div className='titulo_dados_faculdades'>
-                            <h1>chamados por <span>Mês</span></h1>
-                            <h1>x30</h1>
+                            <h1>chamados por <span>
+                                Mês
+                                </span>
+                            </h1>
+                            <h2>
+                                x30
+                            </h2>
                         </div>
                     </div>
                 </div>

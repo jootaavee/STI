@@ -149,4 +149,8 @@
     font-size: 2vw;
     text-shadow: 1.5px 1.5px 3px black;
     }
+
+    .link{
+        text-decoration: none;
+    }
 }
