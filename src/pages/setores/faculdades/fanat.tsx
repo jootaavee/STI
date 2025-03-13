@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../../css/faculdades.css";
+import "../../css/faculdades/fanat.css";
 import PieChartComponent from '../../../components/pizza_faculdades.tsx';
 import { FaArrowLeft } from "react-icons/fa"; //icone voltar
 import Detalhe from '../../../components/detalhe/detalhe.tsx';
 import Relogio from '../../../components/relogio.tsx';
 import Data from '../../../components/data.tsx'
 import LineChartComponent from '../../../components/linhas_faculdades.tsx';
-import logo from '../../imagens/imagensFaculdades/Frame 3.png'
 
 const data = [
     { name: 'sti', value: 400 },
@@ -36,63 +35,63 @@ const data2 = [
 
 const fanat = () => {
     return (<>
-        <div className='container_faculdades'>
+        <div className='container_fanat'>
             <Detalhe />
-            <div className='topo_faculdades'>
-                <div className='voltar_faculdades'>
+            <div className='topo_fanat'>
+                <div className='voltar_fanat'>
                     <Link to='/tela2'>
                         <FaArrowLeft className='voltar_tela_fanat' style={{ color: 'white', fontSize: '300%' }} />
                     </Link>
                 </div>
-                <img src={logo} alt="logo_fanat" className="logo_fanat" />
+                <div className="logo_fanat" />
             </div>
-            <div className='centro_faculdades'>
-                <div className='dados_faculdades'>
-                    <div className='superior_dados_faculdades'>
-                        <div className='esquerda_dados_faculdades'>
-                            <div className='data_faculdades'>
+            <div className='centro_fanat'>
+                <div className='dados_fanat'>
+                    <div className='superior_dados_fanat'>
+                        <div className='esquerda_dados_fanat'>
+                            <div className='data_fanat'>
                                     {<Data />}
                             </div>
-                            <div className='relogio_faculdades'>
+                            <div className='relogio_fanat'>
                                     {<Relogio />}
                             </div>
                         </div>
-                        <div className='direita_dados_faculdades'>
+                        <div className='direita_dados_fanat'>
                             <div><h1 className='chamados_por_semana'>Chamados por semana</h1></div>
                             <div className='MAT_tela_fanat'>
                                 <LineChartComponent data={data2} />
                             </div>
                         </div>
                     </div>
-                    <div className='inferior_dados_faculdades'>
+                    <div className='inferior_dados_fanat'>
                         <Link to="/tela5">
-                            <div className='descricao_chamados_tela_faculdades'>
+                            <div className='descricao_chamados_tela_fanat'>
                         
                             </div>
                         </Link>
                         <Link to="/tela5">
-                            <div className='descricao_chamados_tela_faculdades'>
+                            <div className='descricao_chamados_tela_fanat'>
                         
                             </div>
                         </Link>
                         <Link to="/tela5">
-                            <div className='descricao_chamados_tela_faculdades'>
+                            <div className='descricao_chamados_tela_fanat'>
                         
                             </div>
                         </Link>
                         <Link to="/tela5">
-                            <div className='descricao_chamados_tela_faculdades'>
+                            <div className='descricao_chamados_tela_fanat'>
                         
                             </div>
                         </Link>
                     </div>
                 </div>
-                <div className='chamados_faculdades'>
-                    <div className='grafico_pizza_faculdades'>
+                <div className='chamados_fanat'>
+                    <div className='grafico_pizza_fanat'>
                         <PieChartComponent data={data} />
                     </div>
-                    <div className="dados_chamados_faculdades">
-                        <div className='titulo_dados_faculdades'>
+                    <div className="dados_chamados_fanat">
+                        <div className='titulo_dados_fanat'>
                             <h1>chamados por <span>
                                 Dia</span>
                             </h1>
@@ -101,7 +100,7 @@ const fanat = () => {
                             </h2>
                         </div>
 
-                        <div className='titulo_dados_faculdades'>
+                        <div className='titulo_dados_fanat'>
                             <h1>chamados por <span>
                                     Semana
                                 </span>
@@ -110,7 +109,7 @@ const fanat = () => {
                                 x30
                             </h2>
                         </div>
-                        <div className='titulo_dados_faculdades'>
+                        <div className='titulo_dados_fanat'>
                             <h1>chamados por <span>
                                 Mês
                                 </span>
