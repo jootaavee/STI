@@ -23,6 +23,17 @@ import Fala from "../pages/setores/faculdades/fala.tsx";
 import Fanat from "../pages/setores/faculdades/fanat.tsx";
 import Fasso from "../pages/setores/faculdades/fasso.tsx";
 import Fe from "../pages/setores/faculdades/fe.tsx";
+import Assu from "../pages/setores/campus/assu.tsx";
+import Caico from "../pages/setores/campus/caico.tsx"
+import Natal from "../pages/setores/campus/natal.tsx"
+import Patu from "../pages/setores/campus/patu.tsx"
+import Pdf from "../pages/setores/campus/pdf.tsx"
+import Epilogo from "../pages/setores/departamentos/epilogo.tsx"
+import Reitoria from "../pages/setores/departamentos/reitoria.tsx"
+import Proex from "../pages/setores/departamentos/proex.tsx"
+import Proeg from "../pages/setores/departamentos/proeg.tsx"
+import Propeg from "../pages/setores/departamentos/propeg.tsx"
+
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -49,6 +60,16 @@ const AppRoutes = () => (
             <Route path="/fanat" element={<Fanat />}></Route>
             <Route path="/fasso" element={<Fasso />}></Route>
             <Route path="/fe" element={<Fe />}></Route>
+            <Route path="/assu" element={<Assu />}></Route>
+            <Route path="/caico" element={<Caico />}></Route>
+            <Route path="/natal" element={<Natal />}></Route>
+            <Route path="/patu" element={<Patu />}></Route>
+            <Route path="/pdf" element={<Pdf />}></Route>
+            <Route path="/epilogo" element={<Epilogo />}></Route>
+            <Route path="/reitoria" element={<Reitoria />}></Route>
+            <Route path="/proex" element={<Proex />}></Route>
+            <Route path="/proeg" element={<Proeg />}></Route>
+            <Route path="/propeg" element={<Propeg />}></Route>
         </Routes>
     </Router>
 )
