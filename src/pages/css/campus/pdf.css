@@ -26,8 +26,8 @@
 
         .logo_pdf {
             display: flex;
-            height: 90%;
-            width: 34%;
+            height: 62%;
+            width: 32%;
             
             background-image: url(../../imagens/imagensCampus/pdf.png);
             background-size: cover;

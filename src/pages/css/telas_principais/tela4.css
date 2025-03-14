@@ -1,42 +1,54 @@
 .container_tela_4 {
-    z-index: 0;
-    border: red solid 1px;
+    /* z-index: 0; */
+    /* border: red solid 1px; */
     display: flex;
     height: 200%;
     width: 100%;
-    background-image: url(../../imagens/imagensCentroT1/fundo_3.jpeg);
+    background-image: url(../../imagens/imagensCentroT1/fundo_container.png);
     background-size: cover;
-    overflow-x: hidden;
+    overflow: hidden;
+
 }
 
 .lateral_tela_4 {
     z-index: 0;
-    border: solid red 1px;
+    /* border: solid green 2px; */
     display: flex;
-    height: 200vh;
+    height: 100vh;
     width: 78vw;
     position: relative;
-    left: 22%;
+    left: 22vw;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
+
+    
 }
 
 .chamados_tela_4 {
     z-index: 0;
-    border: solid red 1px;
+    border: rgb(180, 180, 180) 1px solid;
+    border-radius: 2rem;
     display: flex;
-    height: 100%;
-    width: 78%;
+    height: 90vh;
+    width: 65vw;
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
+    overflow-y: scroll;
+    background-color: rgb(36, 44, 105, 0.5);
+    position: relative;
+    bottom: 6vh;
+}
+
+.chamados_tela_4::-webkit-scrollbar {
+    display: none;
 }
 
 .descricao_chamados_tela_4 {
     z-index: 0;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: flex;
     height: 15vh;
     width: 60vw;
@@ -45,11 +57,14 @@
     border-radius: 3rem;
     background-size: cover;
     opacity: 0.8;
+    position: relative;
+    top: 3vh;
+
 }
 
 .descricao_chamados_tela_4:hover {
     z-index: 0;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: flex;
     height: 15vh;
     width: 60vw;
@@ -61,14 +76,14 @@
 }
 
 .adicionar_tela_4 {
-    z-index: 0;
-    border: red solid 1px;
+    z-index: 1;
+    /* border: red solid 1px; */
     display: flex;
     height: 5%;
     width: 7%;
     position: relative;
-    top: 1.5%;
-    left: 40%;
+    top:3%;
+    left: 45%;
 
     justify-content: center;
     align-items: center;

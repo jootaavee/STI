@@ -21,17 +21,17 @@
             height: 10vh;
             width: 5.5vw;
             position: relative;
-            right: 27%;
+            right: 37%;
         }
 
         .logo_assu {
             display: flex;
-            height: 90%;
-            width: 34%;
+            height: 62%;
+            width: 10%;
 
             background-image: url(../../imagens/imagensCampus/assu.png);
             background-size: cover;
-            background-position: center centers;
+            background-position: center center;
         }
     }
 

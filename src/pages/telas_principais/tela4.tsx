@@ -51,6 +51,21 @@ const Tela4 = () => {
 
                         </div>
                     </Link>
+                    <Link to="/tela5">
+                        <div className='descricao_chamados_tela_4'>
+
+                        </div>
+                    </Link>
+                    <Link to="/tela5">
+                        <div className='descricao_chamados_tela_4'>
+
+                        </div>
+                    </Link>
+                    <Link to="/tela5">
+                        <div className='descricao_chamados_tela_4'>
+
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
