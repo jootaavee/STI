@@ -97,7 +97,7 @@
         gap: 0.5rem;
 
         height: 68vh;
-        width: 90vw;
+        width: 98vw;
 
         border-radius: 1rem;
 
@@ -109,15 +109,17 @@
             justify-content: center;
             flex-direction: row;
             overflow: hidden;
-            gap: 4%;
+            gap: 3%;
 
-            height: 3vh;
+            height: 5vh;
             width: 88vw;
 
             margin-top: 30px;
+            margin-right: 50px;
 
             .itens_titulo_tela_5 {
                 display: flex;
+                border: red solid 2px;
                 margin: 11px;
 
                 height: auto;
@@ -130,6 +132,7 @@
         }
 
         .linha_tela_5 {
+            border: red solid 2px;
             display: flex;
 
             height: 2px;
@@ -141,27 +144,29 @@
         }
 
         .descricao_tela_5 {
+            border: red solid 2px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10%;
+            gap: 8.6%;
 
             height: 5vh;
-            width: 85vw;
+            width: 89vw;
 
             border-radius: 2rem;
+            padding-left: 80px;
 
             background-color: rgb(36, 44, 105, 1);
         }
     }
 }
 
-.descricao_tela_5 * {
-    display: flex;
-
-    height: auto;
-    width: auto;
-
-    letter-spacing: 1px;
-    color: #FFF;
+.descricao_tela_5 input {
+    color: black; /* Cor do texto */
+    background-color: white; /* Cor de fundo */
+    border: 1px solid #ccc; /* Borda para destacar os inputs */
+    padding: 5px; /* Espaçamento interno */
+    width: 100%; /* Largura total */
+    margin: 5px 0; /* Margem entre os inputs */
+    pointer-events: auto; /* Garante que os inputs são interativos */
 }

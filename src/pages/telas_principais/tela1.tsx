@@ -1,141 +1,253 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import "../css/telas_principais/tela1.css";
 import Relogio from '../../components/relogio.tsx';
 import Data from '../../components/data.tsx';
 import BarraLateral from '../../components/barralateral/barralateral.tsx';
 import Detalhe from '../../components/detalhe/detalhe.tsx';
+import PieChartSetores from '../../components/pizza.tsx';
+import BarChartMateriais from '../../components/BarChartMateriais.tsx';
 
-//graficos
-import PieChartComponent from '../../components/pizza.tsx';
-import LineChartComponent from '../../components/linhas.tsx';
-import { ResponsiveContainer } from 'recharts';
+interface SetorData {
+  name: string;
+  value: number;
+}
+
+interface MaterialData {
+  name: string;
+  usados: number;
+}
+
+interface Estatisticas {
+  chamadosMes: number;
+  chamadosSemana: number;
+  distribuicaoSetores: SetorData[];
+  materiaisMaisUsados: MaterialData[];
+  colunaDataUtilizada?: string;
+}
+
+interface ModalConfig {
+  title: string;
+  message: string;
+  onConfirm: () => void;
+  onCancel: () => void;
+}
 
 const Tela1 = () => {
-    //Dados para o gráfico de pizza
-    const data = [
-        { name: 'sti', value: 400 },
-        { name: 'sti', value: 300 },
-        { name: 'sti', value: 300 },
-        { name: 'sti', value: 200 },
-        { name: 'sti', value: 100 },
-        { name: 'sti', value: 100 },
-    ];
+  const [estatisticas, setEstatisticas] = useState<Estatisticas>({
+    chamadosMes: 0,
+    chamadosSemana: 0,
+    distribuicaoSetores: [],
+    materiaisMaisUsados: []
+  });
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  const [modalConfig, setModalConfig] = useState<ModalConfig>({
+    title: '',
+    message: '',
+    onConfirm: () => {},
+    onCancel: () => {}
+  });
 
-    //Dados para o gráfico de linhas
-    const data2 = [
-        { name: 'Jan', value1: 400, value2: 300, value3: 200 },
-        { name: 'Feb', value1: 500, value2: 400, value3: 300 },
-        { name: 'Mar', value1: 600, value2: 200, value3: 500 },
-        { name: 'Apr', value1: 278, value2: 390, value3: 300 },
-        { name: 'May', value1: 189, value2: 450, value3: 200 },
-        { name: 'Jun', value1: 239, value2: 300, value3: 400 },
-        { name: 'Jul', value1: 349, value2: 500, value3: 600 },
-        { name: 'Aug', value1: 400, value2: 200, value3: 100 },
-        { name: 'Sep', value1: 300, value2: 450, value3: 350 },
-        { name: 'Oct', value1: 500, value2: 600, value3: 400 },
-        { name: 'Nov', value1: 400, value2: 300, value3: 500 },
-        { name: 'Dec', value1: 700, value2: 800, value3: 600 },
-    ];
+  const coresSetores = ['#4BB9EC', '#FF5DF9', '#FF4D4D', '#54E360', '#FF884D', '#76E2F8'];
 
-    return (<>
-        <div className='container_tela_1'>
-            <BarraLateral />
-            <Detalhe />
+  // Função para limpar nomes de setores
+  const cleanSetorName = (name: string) => {
+    if (!name) return 'Setor desconhecido';
+    return name.toString()
+      .replace(/^\{+|}+$/g, '')
+      .replace(/^"+|"+$/g, '')
+      .replace(/^\[+|\]+$/g, '')
+      .trim();
+  };
 
-            <div className='centro_tela_1'>
-                <div className='parte_esquerda_tela_1'>
-                    <div className='superior_esquerda_tela_1'>
-                        <div className='tabela_QDC'>
-                            <div className='titulo_QDC'>
-                                <h1>
-                                Quantidade de chamados por mês
-                                </h1>
-                            </div>
-                            <div className='desc_titulo_QDC'>
-                                <body>
-                                    x2000
-                                </body>
-                            </div>
-                            <div className='titulo_QDCS'>
-                                <h1>
-                                    Quantidade de chamados por semana
-                                </h1>
-                            </div>
-                            <div className='desc_titulo_QDCS'>
-                                <body>
-                                    x 35
-                                </body>
-                            </div>
-                        </div>
-                        <div className='tabela_hora'>
-                            <h1 className='data'>{<Data />}</h1>
-                            <h1 className='relogio'>{<Relogio />}</h1>
-                        </div>
-                    </div>
-                    <div className='tabela_MAT'>
-                        <div className='titulo_MAT'>
-                            <h1>
-                                Materiais usados na semana
-                            </h1>
-                        </div>
-                        <div className="grafico_MAT">
-                            <LineChartComponent data={data2} />
-                        </div>
-                    </div>
-                </div>
+  const showConfirmModal = (title: string, message: string): Promise<boolean> => {
+    return new Promise((resolve) => {
+      setModalConfig({
+        title,
+        message,
+        onConfirm: () => {
+          setShowModal(false);
+          resolve(true);
+        },
+        onCancel: () => {
+          setShowModal(false);
+          resolve(false);
+        }
+      });
+      setShowModal(true);
+    });
+  };
 
-                <div className='parte_direita_tela_1'>
-                    <div className='grafico_PIZZA'>
-                        <div className='titulo_pizza_tela_1'>
-                            CHAMADOS POR SETOR
-                        </div>
-                        <div className='PIZZA'>
-                            <PieChartComponent data={data} />
-                        </div>
-                        <div className='pequenas_estatisticas_tela_1'>
-                            <div className='estatistica'>
-                                Exatas
-                                <div className='pequeno_detalhe' style={{'backgroundColor': '#4BB9EC'}}>
+  const fetchEstatisticas = async () => {
+    try {
+      const [estatisticasRes, materiaisRes] = await Promise.all([
+        fetch('http://localhost:3020/api/chamados/estatisticas'),
+        fetch('http://localhost:3020/api/materiais/mais-usados')
+      ]);
 
-                                </div>
-                            </div>
-                            <div className='estatistica'>
-                                Humanas
-                                <div className='pequeno_detalhe' style={{'backgroundColor': '#FF5DF9'}}>
-                    
-                                </div>
-                            </div>
-                            <div className='estatistica'>
-                                Reitorias
-                                <div className='pequeno_detalhe' style={{'backgroundColor': '#FF4D4D'}}>
-                    
-                                </div>
-                            </div>
-                            <div className='estatistica'>
-                                Natureza
-                                <div className='pequeno_detalhe' style={{'backgroundColor': '#54E360'}}>
-                    
-                                </div>
-                            </div>
-                            <div className='estatistica'>
-                                Cidades
-                                <div className='pequeno_detalhe' style={{'backgroundColor': '#FF884D'}}>
-                    
-                                </div>
-                            </div>
-                            <div className='estatistica'>FAEF
-                                <div className='pequeno_detalhe' style={{'backgroundColor': '#76E2F8'}}>
-                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      const estatisticasData = await estatisticasRes.json();
+      const materiaisData = await materiaisRes.json();
+
+      if (!estatisticasData.success) {
+        if (estatisticasData.error?.includes('Nenhuma coluna de data encontrada')) {
+          const userConfirmed = await showConfirmModal(
+            'Configuração Necessária',
+            'A tabela precisa de uma coluna de data. Deseja criar automaticamente?'
+          );
+          
+          if (userConfirmed) {
+            const criacaoRes = await fetch('http://localhost:3020/api/criar-coluna-data', {
+              method: 'POST'
+            });
+            const criacaoData = await criacaoRes.json();
+            
+            if (criacaoData.success) {
+              setError('Coluna criada com sucesso! Recarregando dados...');
+              setTimeout(() => {
+                setError(null);
+                fetchEstatisticas();
+              }, 2000);
+              return;
+            }
+          }
+        }
+        throw new Error(estatisticasData.error || 'Erro ao buscar estatísticas');
+      }
+
+      if (!materiaisData.success) {
+        throw new Error(materiaisData.error || 'Erro ao buscar materiais');
+      }
+      
+      setEstatisticas({
+        chamadosMes: estatisticasData.chamadosMes || 0,
+        chamadosSemana: estatisticasData.chamadosSemana || 0,
+        distribuicaoSetores: estatisticasData.distribuicaoSetores || [],
+        materiaisMaisUsados: materiaisData.data || [],
+        colunaDataUtilizada: estatisticasData.coluna_data_utilizada
+      });
+      
+      setError(null);
+    } catch (err) {
+      console.error('Erro ao buscar estatísticas:', err);
+      setError(err instanceof Error ? err.message : 'Erro desconhecido');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchEstatisticas();
+    const intervalId = setInterval(fetchEstatisticas, 60000);
+    return () => clearInterval(intervalId);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <div className="loading-spinner"></div>
+        <p>Carregando dados...</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className='container_tela_1'>
+      <BarraLateral />
+      <Detalhe />
+
+      {showModal && (
+        <div className="custom-modal-overlay">
+          <div className="custom-modal">
+            <h3>{modalConfig.title}</h3>
+            <p>{modalConfig.message}</p>
+            <div className="modal-actions">
+              <button 
+                className="modal-button confirm"
+                onClick={modalConfig.onConfirm}
+              >
+                Sim
+              </button>
+              <button 
+                className="modal-button cancel"
+                onClick={modalConfig.onCancel}
+              >
+                Não
+              </button>
             </div>
+          </div>
+        </div>
+      )}
 
-        </div >
-    </>);
-}
+      {error && (
+        <div className="error-container">
+        
+        </div>
+      )}
+
+      {!error && (
+        <div className='centro_tela_1'>
+          <div className='parte_esquerda_tela_1'>
+            <div className='superior_esquerda_tela_1'>
+              <div className='tabela_QDC'>
+                <div className='titulo_QDC'>
+                  <h1>Chamados deste mês</h1>
+                </div>
+                <div className='desc_titulo_QDC'>
+                  <span>{estatisticas.chamadosMes}</span>
+                </div>
+                <div className='titulo_QDCS'>
+                  <h1>Chamados desta semana</h1>
+                </div>
+                <div className='desc_titulo_QDCS'>
+                  <span>{estatisticas.chamadosSemana}</span>
+                </div>
+              </div>
+              <div className='tabela_hora'>
+                <h1 className='data'><Data /></h1>
+                <h1 className='relogio'><Relogio /></h1>
+              </div>
+            </div>
+            <div className='tabela_MAT'>
+              <div className='titulo_MAT'>
+                <h1>Materiais mais usados</h1>
+              </div>
+              <div className="grafico_MAT">
+                <BarChartMateriais data={estatisticas.materiaisMaisUsados} />
+              </div>
+            </div>
+          </div>
+
+          <div className='parte_direita_tela_1'>
+            <div className='grafico_PIZZA'>
+              <div className='titulo_pizza_tela_1'>
+                CHAMADOS POR SETOR (ÚLTIMOS 30 DIAS)
+                {estatisticas.colunaDataUtilizada && (
+                  <span className="data-filter-info">
+                    [Filtrado por {estatisticas.colunaDataUtilizada}]
+                  </span>
+                )}
+              </div>
+              <div className='PIZZA'>
+                <PieChartSetores data={estatisticas.distribuicaoSetores} />
+              </div>
+              <div className='pequenas_estatisticas_tela_1'>
+                {estatisticas.distribuicaoSetores.map((setor, index) => (
+                  <div key={`${setor.name}-${index}`} className='estatistica'>
+                    {cleanSetorName(setor.name)}
+                    <div 
+                      className='pequeno_detalhe' 
+                      style={{ backgroundColor: coresSetores[index % coresSetores.length] }}
+                    ></div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default Tela1;

@@ -1,18 +1,14 @@
 .container_tela_4 {
-    /* z-index: 0; */
-    /* border: red solid 1px; */
     display: flex;
     height: 200%;
     width: 100%;
     background-image: url(../../imagens/imagensCentroT1/fundo_container.png);
     background-size: cover;
     overflow: hidden;
-
 }
 
 .lateral_tela_4 {
     z-index: 0;
-    /* border: solid green 2px; */
     display: flex;
     height: 100vh;
     width: 78vw;
@@ -22,8 +18,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
-
-    
 }
 
 .chamados_tela_4 {
@@ -32,6 +26,7 @@
     border-radius: 2rem;
     display: flex;
     height: 90vh;
+    padding-top: 50px;
     width: 65vw;
     flex-direction: column;
     gap: 2.5rem;
@@ -48,23 +43,21 @@
 
 .descricao_chamados_tela_4 {
     z-index: 0;
-    /* border: solid red 1px; */
     display: flex;
+    overflow: hidden;
     height: 15vh;
     width: 60vw;
-    background-image: url('../../imagens/imagens_tela_4/fundo_fanat.jpeg');
     background-position: center;
     border-radius: 3rem;
     background-size: cover;
-    opacity: 0.8;
-    position: relative;
-    top: 3vh;
-
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 1; /* Remover a opacidade 0.8 */
+    background-color: transparent; /* Corrigir o fundo para garantir que as cores não sejam sobrepostas */
 }
 
 .descricao_chamados_tela_4:hover {
     z-index: 0;
-    /* border: solid red 1px; */
     display: flex;
     height: 15vh;
     width: 60vw;
@@ -77,14 +70,32 @@
 
 .adicionar_tela_4 {
     z-index: 1;
-    /* border: red solid 1px; */
     display: flex;
     height: 5%;
     width: 7%;
     position: relative;
-    top:3%;
+    top: 6%;
     left: 45%;
-
     justify-content: center;
     align-items: center;
+}
+
+.descrisao_titulo {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.ini_titulo {
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.fim_titulo {
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+
+.chamado-info{
+    color: white;
 }

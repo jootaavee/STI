@@ -147,6 +147,7 @@
         justify-content: center;
 
         .grafico_PIZZA {
+            overflow: auto;
             display: flex;
             height: 80vh;
             width: 23vw;
