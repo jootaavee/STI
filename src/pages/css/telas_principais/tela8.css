@@ -1,128 +1,224 @@
 .container_tela_8 {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  background-color: #222961;
+  background-image: url(../../imagens/imagensCentroT1/fundo_container.png);
+
+  .lateral_tela_8 {
     display: flex;
     height: 100vh;
-    overflow: hidden;
-    width: 100vw;
-    background-color: #222961;
-    background-image: url(../../imagens/imagensCentroT1/fundo_container.png);
+    width: 78vw;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 22%;
 
-    .lateral_tela_8 {
-        display: flex;
-        height: 100vh;
-        width: 78vw;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        left: 22%;
-
-        .descricao_tela_8 {
-            display: flex;
-            height: 85vh;
-            width: 65vw;
-            border: rgb(0, 255, 179) 1px solid;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            border-radius: 1.5rem;
-            background: linear-gradient(0deg, rgb(47, 115, 153, 0.4)85%, #2C335A);
-        }
-
-        .tiulo_descricao_tela_8 {
-            border: red solid 1px;
-            padding: 10px;
-            display: flex;
-            height: 10vh;
-            width: 63vw;
-            /* background-color: aquamarine; */
-            align-items: center;
-            justify-content: center;
-            gap: 5%;
-
-            .inicio_tela_8 {
-                display: flex;
-                height: 6vh;
-                width: 15vw;
-                border: red 2px solid; 
-                /* background-color: #2C335A; */
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-weight: 900;
-                /* letter-spacing: 2px; */
-                font-size: x-large;
-                /* font-family: 'Courier New', Courier, monospace; */
-            }
-
-            .titulo_tela_8 {
-                display: flex;
-                height: 6vh;
-                width: 15vw;
-                border: red 2px solid;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-weight: 900;
-                /* letter-spacing: 2px; */
-                font-size: x-large;
-                /* font-family: 'Courier New', Courier, monospace; */
-            }
-
-            .fim_tela_8 {
-                display: flex;
-                height: 6vh;
-                width: 15vw;
-                border: red 2px solid; 
-                align-items: center;
-                justify-content: center;
-                color: white;
-                font-weight: 900;
-                /* letter-spacing: 2px; */
-                font-size: x-large;
-                /* font-family: 'Courier New', Courier, monospace; */
-            }
-
-            .editar_tela_8 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 6vh;
-                width: 3vw;
-                border: rgb(64, 0, 255) 2px solid;
-            }
-        }
-
-        .linha_tela_8 {
-            border: red solid 2px;
-            width: 95%;
-            /* Largura total do contêiner */
-            height: 2px;
-            /* Altura da linha */
-            background-color: #FFF;
-            /* Cor da linha */
-            /* margin-bottom: 15px; */
-            /* Espaçamento superior e inferior */
-            top: 1rem;
-        }
-
-        .itens_descricao_tela_8 {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            overflow: auto;
-            width: 63vw;
-            gap: 0.9rem;
-
-            .item_tela_8 {
-                display: flex;
-                height: 7vh;
-                width: 60vw;
-                align-items: center;
-                justify-content: space-around;
-                color: white;
-                font-weight: 900;
-                font-size: x-large;
-            }
-        }
+    .descricao_tela_8 {
+      display: flex;
+      height: 85vh;
+      width: 70vw;
+      border: rgb(180, 180, 180) 1px solid;
+      overflow-x: none;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 1.5rem;
+      background: linear-gradient(
+        0deg,
+        rgb(47, 115, 153, 0.4) 65%,
+        rgb(44, 49, 88)
+      );
     }
-}
+
+    .tiulo_descricao_tela_8 {
+      padding: 10px;
+      display: flex;
+      height: 10vh;
+      width: 95%; /* Ajuste para alinhar com o conteúdo abaixo */
+      box-sizing: border-box; /* Inclui padding na largura */
+      align-items: center;
+      justify-content: center;
+
+      .inicio_tela_8, .titulo_tela_8, .fim_tela_8 {
+        display: flex;
+        justify-content: center;
+        flex: 3; /* Ou outro valor, igual aos das colunas de dados */
+        min-width: 100px; /* Mínimo para não espremer */
+        text-align: center; /* Ou left/right conforme desejado */
+        color: #fff;
+        font-size: xx-large;
+        font-weight: 600;
+        
+     }
+
+     .editar_tela_8 {
+        flex: 0 0 auto; /* Não cresce/encolhe */
+        /* Adicionar largura ou padding para alinhar com a coluna de ações */
+        padding-left: 15px; /* Similar ao .trash */
+        /* Ajuste a largura se necessário para o ícone caber bem */
+        width: 50px; /* Exemplo, ajuste conforme necessário */
+        text-align: center;
+        /* border: rgb(64, 0, 255) 2px solid; */
+        .AdicionarMaterial {
+          display: flex;
+          background-color: #222961;
+        }
+      }
+    }
+
+    .linha_tela_8 {
+        border: 1px solid white ;
+        width: 95%; /* Manter consistente com o título */
+        /* ... */
+      }
+  
+      .itens_descricao_tela_8 {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 95%; /* Garante que os itens usem a largura definida */
+        overflow-y: auto; /* Adiciona scroll se necessário */
+        max-height: calc(85vh - 10vh - 2px - 2rem); /* Altura do container - altura titulo - linha - gap */
+        padding: 0 10px; /* Espaçamento lateral se necessário */
+        box-sizing: border-box;
+  
+        /* Estilo base para TODAS as linhas (exibição E adição) */
+        .item_tela_8 {
+          display: flex;
+          align-items: center;
+          padding: 8px 0px; /* Reduzir padding horizontal aqui */
+          border-bottom: 1px solid #eee;
+          width: 100%; /* Ocupa a largura do container .itens_descricao_tela_8 */
+          box-sizing: border-box;
+          gap: 10px; /* Espaço entre as colunas */
+        }
+  
+        /* Remove a borda inferior da última linha */
+        .item_tela_8:last-child {
+          border-bottom: none;
+        }
+  
+        /* Estilos específicos para as colunas DENTRO de QUALQUER .item_tela_8 */
+        .item_tela_8 > div {
+          /* O padding será definido nas classes específicas (.materia, .unidade, etc) */
+          box-sizing: border-box;
+        }
+  
+        /* Estilo específico para a linha de adição */
+        .item_tela_8_item-adicionar {
+          background-color: rgb(41, 45, 81); /* Cor de fundo diferente para destaque */
+          border-radius: 1rem; /* Bordas arredondadas */
+          padding: 10px 0px;
+          margin-top: 10px; /* Espaço acima do formulário */
+          border-bottom: none; /* Remover a linha separadora */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+  
+        /* --- ESTILOS DAS COLUNAS (Aplicam-se a ambas as linhas) --- */
+  
+        .materia {
+          flex: 1; /* Mais espaço para o nome */
+          text-align: center; /* MELHOR ALINHAR NOMES À ESQUERDA */
+          color: #fff;
+          font-weight: bold;
+          font-size: 1.1vw; /* Ajuste o tamanho */
+        }
+  
+        .unidade {
+          flex: 1; /* Menos espaço */
+          text-align: center;
+          color: #fff;
+          font-weight: bold;
+          font-size: 1.1vw;
+        }
+  
+        .preco {
+          flex: 1; /* Um pouco mais que unidade */
+          text-align: center; /* ALINHAR PREÇOS À DIREITA */
+          color: #fff;
+          font-weight: bold;
+          font-size: 1.1vw;
+        }
+  
+        /* Coluna da Lixeira (display) */
+        .trash {
+          flex: 0 0 auto; /* Tamanho fixo */
+          width: 50px; /* Definir uma largura fixa ajuda no alinhamento */
+          text-align: center;
+          padding: 0 10px; /* Adicionar padding para centralizar melhor */
+        }
+  
+        .trash svg {
+          display: block;
+          margin: 0 auto;
+          color: #e74c3c; /* Cor mais visível para exclusão */
+          cursor: pointer;
+          &:hover {
+               color: #c0392b; /* Cor no hover */
+          }
+        }
+  
+        /* Coluna de Ações (formulário) */
+        .actions-form {
+          flex: 0 0 auto; /* Tamanho fixo, igual ao .trash */
+          width: 4vw; /* Ajuste para caber os botões e erro. Deve ser similar a .trash + espaço para botões */
+          display: flex;
+          align-items: center;
+          justify-content: center; /* Alinha botões à direita */
+          gap: 8px; 
+          padding: 0 10px; /* Espaçamento interno */
+          position: relative; /* Para o posicionamento absoluto do erro */
+          /* border: red 2px solid; */
+        }
+  
+        /* Estilo para os inputs do formulário */
+        .form-input {
+          width: 100%; /* FAZ O INPUT PREENCHER A COLUNA */
+          padding: 8px 10px; /* Espaçamento interno do input */
+          background-color: white;
+          border-radius: 5px; /* Bordas mais suaves */
+          border: 1px solid #ccc;
+          font-size: 1rem; /* Tamanho de fonte legível */
+          box-sizing: border-box;
+          color: #333; /* Cor do texto no input */
+        }
+  
+         /* Estilo para os botões de ação do formulário */
+        .action-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            line-height: 0; /* Remove espaço extra em volta do ícone */
+        }
+  
+        /* Estilo para a mensagem de erro inline no formulário */
+        .form-error-inline {
+           color: #e74c3c;
+           font-size: 0.8em;
+           position: absolute; /* Posiciona em relação ao .actions-form */
+           bottom: -18px; /* Abaixo dos botões */
+           right: 10px; /* Alinhado à direita */
+           white-space: nowrap; /* Evita quebra de linha */
+        }
+  
+      } /* Fim de .itens_descricao_tela_8 */
+    } /* Fim de .lateral_tela_8 */
+  } /* Fim de .container_tela_8 */
+  
+  
+  /* Estilos gerais para mensagens de erro (fora do SASS nesting se preferir) */
+  .error-message {
+      margin: 10px 2.5%; /* Centraliza com a largura de 95% */
+      padding: 10px 15px;
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+      text-align: center; /* Centraliza texto do erro */
+  }
+

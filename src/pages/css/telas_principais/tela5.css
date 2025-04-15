@@ -102,37 +102,35 @@
         border-radius: 1rem;
 
         background-color: rgb(34, 41, 97, 0.85);
+        /* border: red 2px solid; */
+        color: #ccc;
 
-        .titulo_descricao_tela_5 {
+        .cabecalho-tabela {
             display: flex;
-            align-items: center;
+            /* border: red solid 2px; */
+            margin-top: 11px;
             justify-content: center;
-            flex-direction: row;
-            overflow: hidden;
-            gap: 3%;
-
-            height: 5vh;
-            width: 88vw;
-
-            margin-top: 30px;
-            margin-right: 50px;
-
-            .itens_titulo_tela_5 {
-                display: flex;
-                border: red solid 2px;
-                margin: 11px;
-
-                height: auto;
-                width: auto;
-
-                font-weight: bold;
-                letter-spacing: 1px;
-                color: white;
-            }
+            align-items: center;
+            height: auto;
+            width: 90vw;
         }
 
-        .linha_tela_5 {
-            border: red solid 2px;
+        .cabecalho-tabela span {
+            flex:1;
+            /* display: flex; */
+            /* border: red solid 2px; */
+            /* margin: 11px; */
+
+            /* height: auto; */
+            /* width: auto; */
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: white;
+        }
+
+        .linha-divisoria {
+            /* border: red solid 2px; */
             display: flex;
 
             height: 2px;
@@ -142,8 +140,16 @@
 
             background-color: #FFF;
         }
+        .linha-dados{
+            display: flex;
+            width: 95vw;
+            justify-content: right;
+            align-items: center;
+            gap: 1.7vw;
+            margin-bottom: 1vh;
+        }
 
-        .descricao_tela_5 {
+        /* .descricao_tela_5 {
             border: red solid 2px;
             display: flex;
             align-items: center;
@@ -157,7 +163,7 @@
             padding-left: 80px;
 
             background-color: rgb(36, 44, 105, 1);
-        }
+        } */
     }
 }
 

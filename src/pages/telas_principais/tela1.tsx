@@ -214,6 +214,8 @@ const Tela1 = () => {
               </div>
               <div className="grafico_MAT">
                 <BarChartMateriais data={estatisticas.materiaisMaisUsados} />
+
+
               </div>
             </div>
           </div>
@@ -221,12 +223,13 @@ const Tela1 = () => {
           <div className='parte_direita_tela_1'>
             <div className='grafico_PIZZA'>
               <div className='titulo_pizza_tela_1'>
-                CHAMADOS POR SETOR (ÚLTIMOS 30 DIAS)
-                {estatisticas.colunaDataUtilizada && (
+                <h1>CHAMADOS POR SETOR </h1>
+                <h2>(ÚLTIMOS 30 DIAS)</h2>
+                {/* {estatisticas.colunaDataUtilizada && (
                   <span className="data-filter-info">
-                    [Filtrado por {estatisticas.colunaDataUtilizada}]
+                    {estatisticas.colunaDataUtilizada}
                   </span>
-                )}
+                )} */}
               </div>
               <div className='PIZZA'>
                 <PieChartSetores data={estatisticas.distribuicaoSetores} />

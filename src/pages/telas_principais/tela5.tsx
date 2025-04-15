@@ -256,15 +256,15 @@ const Tela5 = () => {
         ) : (
           <>
             <div className='cabecalho-tabela'>
-              <div>Profissionais</div>
-              <div>Diárias</div>
-              <div>Posto Mensal</div>
-              <div>Valor Calculado</div>
-              <div>Itens</div>
-              <div>Quantidades</div>
-              <div>Unidades</div>
-              <div>Valor Unitário</div>
-              <div>Valor Total</div>
+              <span>Profissionais</span>
+              <span>Diárias</span>
+              <span>Posto Mensal</span>
+              <span>Valor Calculado</span>
+              <span>Itens</span>
+              <span>Quantidades</span>
+              <span>Unidades</span>
+              <span>Valor Unitário</span>
+              <span>Valor Total</span>
             </div>
             
             <div className='linha-divisoria'></div>
@@ -280,6 +280,7 @@ const Tela5 = () => {
                     value={linha.profissionais || ''}
                     onChange={(e) => handleFieldChange(index, 'profissionais', e.target.value)}
                     className='select-profissionais'
+                    style={{ width: '8%', padding: '5px', backgroundColor: 'white', borderRadius: '1vw' }}
                   >
                     <option value="">Selecione...</option>
                     {profissionais.map(prof => (
@@ -294,6 +295,7 @@ const Tela5 = () => {
                     value={linha.diarias === 0 ? '' : linha.diarias}
                     onChange={(e) => handleFieldChange(index, 'diarias', e.target.value)}
                     placeholder="0"
+                    style={{ width: '8%', padding: '5px', backgroundColor: 'white', borderRadius: '1vw' }}
                   />
                   
                   <input
@@ -301,6 +303,7 @@ const Tela5 = () => {
                     value={linha.postomensal === 0 ? '' : linha.postomensal}
                     onChange={(e) => handleFieldChange(index, 'postomensal', e.target.value)}
                     placeholder="0"
+                    style={{ width: '8%', padding: '5px', backgroundColor: 'white', borderRadius: '1vw' }}
                   />
                   
                   <input
@@ -308,11 +311,13 @@ const Tela5 = () => {
                     value={linha.valorcalculado === 0 ? '' : formatarExibicaoNumero(linha.valorcalculado)}
                     onChange={(e) => handleFieldChange(index, 'valorcalculado', e.target.value)}
                     placeholder="0,00"
+                    style={{ width: '8%', padding: '5px', backgroundColor: 'white', borderRadius: '1vw' }}
                   />
                   
                   <select
                     value={linha.itens || 0}
                     onChange={(e) => handleFieldChange(index, 'itens', e.target.value)}
+                    style={{ width: '8%', padding: '5px', backgroundColor: 'white', borderRadius: '1vw' }}
                   >
                     <option value={0}>Selecione...</option>
                     {materiais.map(mat => (
@@ -327,6 +332,7 @@ const Tela5 = () => {
                     value={linha.quantidades === 0 ? '' : linha.quantidades}
                     onChange={(e) => handleFieldChange(index, 'quantidades', e.target.value)}
                     placeholder="0"
+                    style={{ width: '8%', padding: '5px', backgroundColor: 'white', borderRadius: '1vw' }}
                   />
                   
                   <input
@@ -334,6 +340,7 @@ const Tela5 = () => {
                     value={linha.unidades || ''}
                     readOnly
                     className="campo-readonly"
+                    style={{ width: '8%', padding: '5px', backgroundColor: 'white', borderRadius: '1vw' }}
                   />
                   
                   <input
@@ -341,6 +348,7 @@ const Tela5 = () => {
                     value={formatarExibicaoNumero(linha.valorunitario)}
                     readOnly
                     className="campo-readonly"
+                    style={{ width: '8%', padding: '5px', backgroundColor: 'white', borderRadius: '1vw' }}
                   />
                   
                   <input
@@ -348,6 +356,7 @@ const Tela5 = () => {
                     value={formatarExibicaoNumero(linha.valortotal)}
                     readOnly
                     className="campo-readonly"
+                    style={{ width: '8%', padding: '5px', backgroundColor: 'white', borderRadius: '1vw' }}
                   />
                   
                   <div className='container-icone-lixeira'>

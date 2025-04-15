@@ -45,8 +45,8 @@ const Tela4 = () => {
       'FAEN': '#126200',
       'FACS': '#126200',
       'FAEF': '#005262',
-      'FACEM': '#17009b',
-      'FANAT': '#17009b',
+      'FACEM': 'rgb(34, 41, 140)',
+      'FANAT': 'rgb(34, 41, 140)',
     };
     
     return coresSetores[setorLimpo] || 'rgb(36, 44, 105, 0.5)';

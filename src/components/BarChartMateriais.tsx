@@ -36,16 +36,16 @@ const BarChartMateriais: React.FC<BarChartMateriaisProps> = ({ data }) => {
       <BarChart
         data={data}
         margin={{
-          top: 20,
-          right: 30,
-          left: 20,
-          bottom: 60,
+          top: 80,
+          right: 0,
+          left: 0,
+          bottom: 40,
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis 
           dataKey="name" 
-          angle={-45} 
+          angle={-25} 
           textAnchor="end"
           height={70}
           tick={{ fontSize: 12 }}
@@ -53,12 +53,12 @@ const BarChartMateriais: React.FC<BarChartMateriaisProps> = ({ data }) => {
         <YAxis />
         <Tooltip content={<CustomTooltip />} />
         <Legend />
-        <Bar 
-          dataKey="usados" 
-          name="Materiais mais usados" 
-          fill="#8884d8"
-          radius={[4, 4, 0, 0]}
-        />
+          <Bar 
+            dataKey="usados" 
+            name="Materiais mais usados" 
+            fill="#8884d8"
+            radius={[4, 4, 0, 0]}
+          />
       </BarChart>
     </ResponsiveContainer>
   );
